@@ -1,0 +1,10 @@
+#gig-buttons {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+#create-gig-btn {
+  width: 175px;
+  margin: 15px 0;
+}

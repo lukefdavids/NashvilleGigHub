@@ -1,0 +1,197 @@
+{
+  "artists": [
+    {
+      "id": 1,
+      "name": "Luke Davids",
+      "bio": "Luke Davids is a London-born singer-songwriter with piano-based songs and inventive arrangements that evoke the refined hooks of The Beatles, Billy Joel, Elvis Costello and Ben Folds Five. His music is described as “sharp, accessibly sophisticated, and refreshingly sincere.”",
+      "image": "/img/LukeDavids.jpeg",
+      "facebook": "https://www.facebook.com/lukedavidsmusic",
+      "instagram": "https://www.instagram.com/lukefdavids/?hl=en",
+      "spotify": "https://open.spotify.com/artist/68BB5oeFQgN3OfC26JdTpz?si=mAc3e0woSEW3ILGSp_1B0Q",
+      "website": "https://www.lukedavids.com",
+      "genreId": "11"
+    },
+    {
+      "id": 2,
+      "name": "Corey Congilio",
+      "bio": "Corey Congilio is a seasoned guitarist, educator, and producer based in Nashville, Tennessee. Born and raised in Phillipsburg, New Jersey, he was introduced to music by his family and began playing guitar at the age of 13. After studying audio engineering at the Art Institute of Pittsburgh, he became an in-demand session player and producer.\n\nIn 2014, he moved to Nashville, where he has performed with artists such as Joss Stone, David Lee Murphy, Lucie Silvas, Radney Foster, Cassadee Pope, Derek St. Holmes, Danielle Bradberry, and Laura Bell Bundy. Corey has authored over 30 instructional guitar courses and is known for his work with TrueFire, Brett Papa, and Your Guitar Sage.\n\nHe also hosts weekly lessons and gear demos on his YouTube channel. In addition to his teaching, Corey writes and performs his own music, blending traditional blues with contemporary rock and country influences.",
+      "image": "/img/CoreyCongilio.jpg",
+      "facebook": "https://www.facebook.com/coreycongiliomusic",
+      "instagram": "https://www.instagram.com/coreycongilio/#",
+      "spotify": "https://open.spotify.com/artist/1KfQL0KSth4B5r0FZYiDQu",
+      "website": "https://coreycongilio.com/",
+      "genreId": "2"
+    },
+    {
+      "id": 3,
+      "name": "Nicole Boggs & The Reel",
+      "bio": "Nicole Boggs & The Reel are questioning everything. Rooted in three-part harmony and existential blues, they inject rock ‘n’ roll riffs and vindicated vocals into social commentary, holding a mirror to the absurdity of modern life.\n\nNicole Boggs (bass, lead vox), Alex Kramer (guitars, vox), and Sam Gyllenhaal (guitars, vox) bring drastically different personalities, philosophies and influences to the table. The songwriting team has crafted their sound by zeroing in on each other’s strengths and never shying away from hard conversations. They build common ground through the tension and release of creating together; they don’t settle until everyone is satisfied.\n\nGrowing up in musical families, they each walked solo musical paths before coming together for their first official band release, *Scenes From Last Year* in 2019. Dripping with razor-edged sarcasm, their hard-hitting follow-up EP *None of Your Business* dropped in the summer of 2020, in the depths of the first wave of Covid-19. Since then, the group has been honing their collective sound behind the scenes, quietly and diligently working on their upcoming release, *Dystopian Book Club*.\n\nThis group of unusual suspects share a love for The Beatles, books, and cultural criticism. They delight in debating the meaning of words and hold the belief that the personal is political. They are always evolving, challenging each other and reflecting the world as they see it in hope that transparency will one day shift the digital tides.",
+      "image": "/img/NicoleBoggs.jpg",
+      "facebook": "https://www.facebook.com/dystopianbookclub/",
+      "instagram": "https://www.instagram.com/dystopianbookclub/",
+      "spotify": "https://open.spotify.com/artist/67dWh1CLdowCzryNF4pxFh?si=hxDPVj_mS-i9b8HM-Aa_Ng",
+      "website": "https://www.nicoleboggsandthereel.com",
+      "genreId": "10"
+    }
+  ],
+  "venues": [
+    {
+      "id": 1,
+      "name": "The 5 Spot",
+      "address": "1006 Forrest Ave, Nashville, TN 37206",
+      "website": "https://www.the5spot.club/"
+    },
+    {
+      "id": 2,
+      "name": "The Basement",
+      "address": "1604 8th Ave S, Nashville, TN 37203",
+      "website": "https://www.thebasementnashville.com/"
+    },
+    {
+      "id": 3,
+      "name": "The Basement East",
+      "address": "917 Woodland St, Nashville, TN 37206",
+      "website": "https://www.thebasementnashville.com/"
+    },
+    {
+      "id": 4,
+      "name": "The Bluebird Cafe",
+      "address": "4104 Hillsboro Pike, Nashville, TN 37215",
+      "website": "https://bluebirdcafe.com/"
+    },
+    {
+      "id": 5,
+      "name": "3rd & Lindsley",
+      "address": "818 3rd Ave S, Nashville, TN 37210",
+      "website": "https://3rdandlindsley.com/"
+    },
+    {
+      "id": 6,
+      "name": "The End",
+      "address": "2219 Elliston Pl, Nashville, TN 37203",
+      "website": "https://www.theendnashville.com/"
+    },
+    {
+      "id": 7,
+      "name": "The Station Inn",
+      "address": "402 12th Ave S, Nashville, TN 37203",
+      "website": "https://www.stationinn.com/"
+    },
+    {
+      "id": 8,
+      "name": "Dee's Country Cocktail Lounge",
+      "address": "102 E Palestine Ave, Madison, TN 37115",
+      "website": "https://www.deeslounge.com/"
+    },
+    {
+      "id": 9,
+      "name": "Rudy's Jazz Room",
+      "address": "809 Gleaves St, Nashville, TN 37203",
+      "website": "https://www.rudysjazzroom.com/"
+    },
+    {
+      "id": 10,
+      "name": "The Listening Room Cafe",
+      "address": "618 4th Ave S, Nashville, TN 37210",
+      "website": "https://www.listeningroomcafe.com/"
+    },
+    {
+      "id": 11,
+      "name": "The Blue Room",
+      "address": "623 7th Ave S, Nashville, TN 37203",
+      "website": "https://theblueroombar.com/"
+    },
+    {
+      "id": 12,
+      "name": "The High Watt",
+      "address": "1 Cannery Row, Nashville, TN 37203",
+      "website": "https://www.mercylounge.com/"
+    },
+    {
+      "id": 13,
+      "name": "Jane's Hideaway",
+      "address": "209 3rd Ave N, Nashville, TN 37201",
+      "website": "https://www.janeshideaway.com/"
+    },
+    {
+      "id": 14,
+      "name": "Skull's Rainbow Room",
+      "address": "222 Printer's Alley, Nashville, TN 37201",
+      "website": "https://skullsrainbowroom.com/"
+    },
+    {
+      "id": 15,
+      "name": "The Bowery Vault",
+      "address": "2905 Gallatin Pike, Suite C, Nashville, TN 37216",
+      "website": "https://www.theboweryvault.com/"
+    },
+    {
+      "id": 16,
+      "name": "The Underdog",
+      "address": "3208 Gallatin Pike, Nashville, TN 37216",
+      "website": "https://www.theunderdognashville.com/"
+    },
+    {
+      "id": 17,
+      "name": "Star Rover Sound",
+      "address": "1400 Adams St, Nashville, TN 37208",
+      "website": "https://www.starroversound.com/"
+    }
+  ],
+  "gigs": [
+    {
+      "id": 2,
+      "artistId": 1,
+      "venueId": 1,
+      "dateTime": "2025-06-10T20:00:00",
+      "cost": "$10",
+      "ages": "21+"
+    }
+  ],
+  "genres": [
+    {
+      "id": 1,
+      "name": "Alternative"
+    },
+    {
+      "id": 2,
+      "name": "Blues"
+    },
+    {
+      "id": 3,
+      "name": "Country"
+    },
+    {
+      "id": 4,
+      "name": "Electronic"
+    },
+    {
+      "id": 5,
+      "name": "Funk"
+    },
+    {
+      "id": 6,
+      "name": "Hip Hop"
+    },
+    {
+      "id": 7,
+      "name": "Indie"
+    },
+    {
+      "id": 8,
+      "name": "Jazz"
+    },
+    {
+      "id": 9,
+      "name": "Pop"
+    },
+    {
+      "id": 10,
+      "name": "Rock"
+    },
+    {
+      "id": 11,
+      "name": "Singer-Songwriter"
+    }
+  ]
+}
