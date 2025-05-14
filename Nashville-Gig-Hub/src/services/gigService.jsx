@@ -25,3 +25,17 @@ export const deleteGig = (gigId) => {
     method: "DELETE",
   }).then((res) => res.json());
 };
+
+export const updateGig = (gigObj) => {
+  return fetch(`http://localhost:8088/gigs/${gigObj.id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(gigObj),
+  }).then((res) => res.json());
+};
+
+export const getGigById = (gigId) => {
+  return fetch(`http://localhost:8088/gigs/${gigId}`).then((res) => res.json());
+};

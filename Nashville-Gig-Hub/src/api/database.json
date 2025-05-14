@@ -140,12 +140,36 @@
   ],
   "gigs": [
     {
+      "artistId": 2,
+      "venueId": 17,
+      "dateTime": "2025-06-05T20:00",
+      "cost": 0,
+      "ages": "All Ages",
+      "id": 3
+    },
+    {
+      "artistId": 3,
+      "venueId": 15,
+      "dateTime": "2025-06-05T20:00",
+      "cost": 0,
+      "ages": "All Ages",
+      "id": 3
+    },
+    {
       "id": 2,
       "artistId": 1,
       "venueId": 1,
       "dateTime": "2025-06-10T20:00:00",
-      "cost": "$10",
+      "cost": 14,
       "ages": "21+"
+    },
+    {
+      "artistId": 1,
+      "venueId": 1,
+      "dateTime": "2025-05-17T19:45",
+      "cost": 0,
+      "ages": "All Ages",
+      "id": 4
     }
   ],
   "genres": [

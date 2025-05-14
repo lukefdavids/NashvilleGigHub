@@ -27,6 +27,7 @@ export const MyGigs = () => {
         const foundVenue = venues.find((venue) => venue.id === gig.venueId);
         return {
           ...gig,
+          cost: gig.cost === 0 ? "Free" : `$${gig.cost}`,
           venueName: foundVenue?.name,
           venueAddress: foundVenue?.address,
           venueWebsite: foundVenue?.website,
@@ -37,11 +38,16 @@ export const MyGigs = () => {
     }
   }, [gigs, venues]);
 
-  const handleClick = (e) => {
+  const handleCreate = (e) => {
     e.preventDefault();
     navigate("/create-gig");
   };
 
+  const handleEdit = (e) => {
+    e.preventDefault();
+    const gigId = parseInt(e.target.value);
+    navigate(`/edit-gig/${gigId}`);
+  };
   const handleDelete = (e) => {
     e.preventDefault();
     const gigId = parseInt(e.target.value);
@@ -56,6 +62,7 @@ export const MyGigs = () => {
       window.location.reload();
     }
   };
+
   return (
     <div id="home-container">
       <h1>My Gigs</h1>
@@ -65,7 +72,7 @@ export const MyGigs = () => {
           <button
             className="button-74"
             id="create-gig-btn"
-            onClick={handleClick}
+            onClick={handleCreate}
           >
             + Create Gig
           </button>
@@ -110,7 +117,13 @@ export const MyGigs = () => {
                   <p>Ages: {gig.ages}</p>
                 </div>
                 <div id="gig-buttons">
-                  <button className="button-74">Edit</button>
+                  <button
+                    value={gig.id}
+                    className="button-74"
+                    onClick={handleEdit}
+                  >
+                    Edit
+                  </button>
                   <button
                     value={gig.id}
                     className="button-74"

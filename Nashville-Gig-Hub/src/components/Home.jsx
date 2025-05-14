@@ -18,7 +18,11 @@ export const Home = () => {
     if (gigs && venues) {
       const gigsPlusVenue = gigs.map((gig) => {
         const foundVenue = venues.find((venue) => venue.id === gig.venueId);
-        return { ...gig, ...foundVenue };
+        return {
+          ...gig,
+          cost: gig.cost === 0 ? "Free" : `$${gig.cost}`,
+          ...foundVenue,
+        };
       });
 
       setGigWithVenue(gigsPlusVenue);

@@ -5,6 +5,7 @@ import { ArtistInfo } from "../components/Artist/ArtistInfo";
 import { Home } from "../components/Home";
 import { MyGigs } from "../components/MyGigs";
 import { CreateGig } from "../components/CreateGig";
+import { EditGig } from "../components/EditGig";
 
 export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({});
@@ -32,6 +33,10 @@ export const ApplicationViews = () => {
         <Route
           path="/create-gig"
           element={<CreateGig currentUser={currentUser} />}
+        />
+        <Route
+          path="/edit-gig/:gigId"
+          element={<EditGig currentUser={currentUser} />}
         />
       </Route>
     </Routes>
