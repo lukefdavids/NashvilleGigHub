@@ -42,5 +42,10 @@ h2 {
   width: 33%;
   padding: 0px;
   line-height: 35px;
+  background-color: rgb(255, 255, 255);
   margin: 0 auto;
+}
+
+#create-btn:hover {
+  background-color: #fbeee0;
 }

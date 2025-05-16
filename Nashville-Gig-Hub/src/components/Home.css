@@ -26,11 +26,16 @@
 
 .gig {
   display: flex;
+  background-color: white;
   width: 90%;
   margin: 15px auto;
   border: 1px solid gray;
   justify-content: center;
   font-size: 1.2rem;
+}
+
+.gig span {
+  font-weight: bold;
 }
 
 .gig-left,
@@ -68,11 +73,14 @@
 }
 
 .links {
+  /* border: 1px solid black; */
   display: flex;
+  justify-content: center;
 }
 
 .links img {
+  margin: 3px;
   width: 40px;
+  object-fit: contain;
   height: 40px;
-  /* border: 1px solid black; */
 }

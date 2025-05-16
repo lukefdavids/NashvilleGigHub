@@ -16,7 +16,6 @@ export const MyGigs = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // getUserById(currentUser).then(setUser);
     getGigsByUserId(currentUser).then(setGigs);
     getAllVenues().then(setVenues);
   }, [currentUser]);
@@ -27,7 +26,6 @@ export const MyGigs = () => {
         const foundVenue = venues.find((venue) => venue.id === gig.venueId);
         return {
           ...gig,
-          cost: gig.cost === 0 ? "Free" : `$${gig.cost}`,
           venueName: foundVenue?.name,
           venueAddress: foundVenue?.address,
           venueWebsite: foundVenue?.website,
@@ -113,7 +111,7 @@ export const MyGigs = () => {
                 <div className="gig-info">
                   <p>Where: {gig.venueAddress}</p>
                   <p>When: {formatDateTime(gig.dateTime).formattedTime}</p>
-                  <p>How much: {gig.cost}</p>
+                  <p>How much: {gig.cost === 0 ? "Free" : `$${gig.cost}`}</p>
                   <p>Ages: {gig.ages}</p>
                 </div>
                 <div id="gig-buttons">

@@ -11,7 +11,7 @@ export const EditGig = ({ currentUser }) => {
     artistId: null,
     venueId: 0,
     dateTime: "",
-    cost: "",
+    cost: 0,
     ages: "",
   });
 
@@ -19,13 +19,30 @@ export const EditGig = ({ currentUser }) => {
 
   const navigate = useNavigate();
   useEffect(() => {
-    Promise.all([getAllVenues(), getGigById(gigId)]).then(
-      ([venueList, gig]) => {
-        setVenues(venueList);
-        gig.artistId = currentUser?.id ?? null;
-        setNewGig(gig);
-      }
-    );
+    getAllVenues().then(setVenues);
+
+    getGigById(gigId).then((res) => {
+      setNewGig({ ...res, artistId: currentUser.id });
+    });
+
+    // Promise.all([getAllVenues(), getGigById(gigId)]).then(
+    //   ([venueList, gig]) => {
+    //     setVenues(venueList);
+    //     gig.artistId = currentUser?.id ?? null;
+
+    //     // Normalize the cost value
+    //     const costStr = gig.cost?.toString().trim().toLowerCase();
+    //     if (costStr === "free") {
+    //       gig.cost = 0;
+    //     } else if (costStr.startsWith("$")) {
+    //       gig.cost = parseFloat(costStr.replace("$", "")) || 0;
+    //     } else {
+    //       gig.cost = parseFloat(costStr) || 0;
+    //     }
+
+    //     setNewGig(gig);
+    //   }
+    // );
   }, [gigId, currentUser]);
 
   const handleEdit = (e) => {
@@ -43,23 +60,10 @@ export const EditGig = ({ currentUser }) => {
   const handleSelection = (e) => {
     const { name, value } = e.target;
 
-    if (name === "cost") {
-      const num = parseFloat(value);
-      setNewGig({
-        ...newGig,
-        cost: isNaN(num) ? "" : num,
-      });
-    } else if (name.includes("Id")) {
-      setNewGig({
-        ...newGig,
-        [name]: parseInt(value),
-      });
-    } else {
-      setNewGig({
-        ...newGig,
-        [name]: value,
-      });
-    }
+    setNewGig({
+      ...newGig,
+      [name]: value,
+    });
   };
 
   return (
@@ -74,7 +78,6 @@ export const EditGig = ({ currentUser }) => {
             id="venue"
             name="venueId"
             value={newGig.venueId}
-            defaultValue=""
             required
             onChange={handleSelection}
           >
@@ -129,7 +132,6 @@ export const EditGig = ({ currentUser }) => {
             required
             value={newGig.ages}
             onChange={handleSelection}
-            defaultValue=""
           >
             <option disabled value="">
               ----

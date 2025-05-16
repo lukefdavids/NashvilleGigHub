@@ -32,6 +32,85 @@
       "spotify": "https://open.spotify.com/artist/67dWh1CLdowCzryNF4pxFh?si=hxDPVj_mS-i9b8HM-Aa_Ng",
       "website": "https://www.nicoleboggsandthereel.com",
       "genreId": "10"
+    },
+    {
+      "id": 4,
+      "name": "Judy Blank",
+      "bio": "Judy Blank is a Dutch-born, Nashville-based singer-songwriter who blends retro soul, indie edge, and folk storytelling into a sound that’s both timeless and refreshingly modern.",
+      "image": "/img/JudyBlank.jpg.webp",
+      "facebook": "https://www.facebook.com/judyblankmusic",
+      "instagram": "https://www.instagram.com/judyblankmusic/",
+      "spotify": "https://open.spotify.com/artist/2Kqa4BYcpEq4KXX9fYmRpH",
+      "website": "https://judyblank.com",
+      "genreId": "7"
+    },
+
+    {
+      "id": 5,
+      "name": "Guthrie Trapp",
+      "bio": "Guthrie Trapp is one of Nashville’s preeminent guitar talents, known for his taste, touch, and tone. He has performed and recorded with numerous artists and continues to influence the music scene with his exceptional guitar skills.",
+      "image": "/img/GuthrieTrapp.jpg",
+      "facebook": "https://www.facebook.com/guthrietrappmusic",
+      "instagram": "https://www.instagram.com/guthrietrapp/",
+      "spotify": "https://open.spotify.com/artist/4CP7yvfFofQ98f1rN5VcAQ?si=5oYehk26TCm0saxIUO5GlA",
+      "website": "https://guthrietrapp.com",
+      "genreId": "2"
+    },
+    {
+      "id": 6,
+      "name": "Emily West",
+      "bio": "Emily West is a critically acclaimed singer-songwriter known for her evocative voice and compelling stage presence. Born in Waterloo, Iowa, she began her musical journey at a young age, displaying a natural talent for storytelling through song.",
+      "image": "/img/EmilyWest.jpg",
+      "facebook": "https://www.facebook.com/EmilyWestOfficial",
+      "instagram": "https://www.instagram.com/emilywestmusic/",
+      "spotify": "https://open.spotify.com/artist/20YJEBSWm14EDzjbXNcwDA",
+      "website": "https://theemilywest.com",
+      "genreId": "3"
+    },
+
+    {
+      "id": 7,
+      "name": "Sam Lewis",
+      "bio": "Sam Lewis is a Nashville-based musician with a unique sound that blends Americana, blues, and soul. His music is soulful and heartfelt, with lyrics that speak to the human experience.",
+      "image": "/img/SamLewis.png",
+      "facebook": "https://www.facebook.com/samlewistunes",
+      "instagram": "https://www.instagram.com/samlewistunes/",
+      "spotify": "https://open.spotify.com/artist/0DPtkH76PvvKbBO1GYrLYp",
+      "website": "https://www.samlewistunes.com",
+      "genreId": "2"
+    },
+    {
+      "id": 8,
+      "name": "Laura Lamb",
+      "bio": "Laura Lamb stands as a luminary singer-songwriter & artist whose music parallels the spirit of the 60’s pop golden era. Originating from Minnesota, she sings with a sultry, ember-like tone that captivates audiences in Nashville and beyond.",
+      "image": "/img/LauraLamb.webp",
+      "facebook": "https://www.facebook.com/itslauralamb/",
+      "instagram": "https://www.instagram.com/itslauralamb/",
+      "spotify": "https://open.spotify.com/artist/6oIxahJi1wft7QwxvTWJ46",
+      "website": "https://itslauralamb.com",
+      "genreId": "11"
+    },
+    {
+      "id": 9,
+      "name": "Kimberly Atwood",
+      "bio": "Raised in the Ozarks, Kimberly Atwood's core is rooted in her small-town, close-knit family upbringing. With a blue-collar heritage and unshakable dream, Atwood moved to Nashville in 2016 to pursue her passion for singing and songwriting.",
+      "image": "/img/KimberlyAtwood.jpeg",
+      "facebook": "https://www.facebook.com/kimberlyatwoodofficial/",
+      "instagram": "https://www.instagram.com/kimberlyatwoodmusic/",
+      "spotify": "https://open.spotify.com/artist/1lF6TQ4ZDYJ0netQC07bDw?si=-FyEvPgbRN-V08hRxvhjxg",
+      "website": "https://kimberlyatwood.co/",
+      "genreId": "3"
+    },
+    {
+      "id": 10,
+      "name": "Aaron Lee Tasjan",
+      "bio": "Aaron Lee Tasjan is a Nashville-based singer-songwriter and guitarist known for his genre-defying sound that blends glam rock, indie folk, and Americana. Originally from Ohio, Tasjan built his career with a fearless, boundary-pushing style and wry lyrical wit. He has performed with the New York Dolls, produced solo albums to critical acclaim, and earned a reputation for his flamboyant fashion sense and deeply introspective songwriting.\n\nHis albums, including *Karma for Cheap* and *Tasjan! Tasjan! Tasjan!*, explore themes of identity, self-acceptance, and the ever-evolving nature of the music industry. With a loyal following and growing recognition, Aaron continues to shape Nashville’s alt-Americana scene with his bold authenticity.",
+      "image": "/img/AaronLeeTasjan.jpg",
+      "facebook": "https://www.facebook.com/aaronleetasjanmusic",
+      "instagram": "https://www.instagram.com/aaronleetasjan/",
+      "spotify": "https://open.spotify.com/artist/4PztbfCny3X9gBjlpgvjYo",
+      "website": "https://www.aaronleetasjan.com/",
+      "genreId": "11"
     }
   ],
   "venues": [
@@ -145,7 +224,7 @@
       "dateTime": "2025-06-05T20:00",
       "cost": 0,
       "ages": "All Ages",
-      "id": 3
+      "id": 1
     },
     {
       "artistId": 3,
@@ -153,23 +232,31 @@
       "dateTime": "2025-06-05T20:00",
       "cost": 0,
       "ages": "All Ages",
-      "id": 3
+      "id": 2
     },
     {
-      "id": 2,
+      "id": 3,
       "artistId": 1,
       "venueId": 1,
       "dateTime": "2025-06-10T20:00:00",
-      "cost": 14,
+      "cost": "8",
       "ages": "21+"
     },
     {
       "artistId": 1,
-      "venueId": 1,
-      "dateTime": "2025-05-17T19:45",
-      "cost": 0,
-      "ages": "All Ages",
+      "venueId": 3,
+      "dateTime": "2025-06-21T19:00",
+      "cost": 15,
+      "ages": "21+",
       "id": 4
+    },
+    {
+      "artistId": 4,
+      "venueId": 2,
+      "dateTime": "2025-08-30T21:00",
+      "cost": "8",
+      "ages": "21+",
+      "id": 5
     }
   ],
   "genres": [

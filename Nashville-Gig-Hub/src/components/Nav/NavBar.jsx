@@ -7,7 +7,7 @@ export const Navbar = ({ currentUser }) => {
         <Link to="/">Home</Link>
       </li>
       <li className="nav-item">
-        <Link to="/">Artists</Link>
+        <Link to="/artists">Artists</Link>
       </li>
       <li className="nav-item">
         <Link to="/">My Profile</Link>

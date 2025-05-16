@@ -42,23 +42,10 @@ export const CreateGig = ({ currentUser }) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    if (name === "cost") {
-      const num = parseFloat(value);
-      setNewGig({
-        ...newGig,
-        cost: num === 0 ? "Free" : `$${num}`,
-      });
-    } else if (name.includes("Id")) {
-      setNewGig({
-        ...newGig,
-        [name]: parseInt(value),
-      });
-    } else {
-      setNewGig({
-        ...newGig,
-        [name]: value,
-      });
-    }
+    setNewGig({
+      ...newGig,
+      [name]: name.includes("Id") ? parseInt(value) : value,
+    });
   };
 
   return (
