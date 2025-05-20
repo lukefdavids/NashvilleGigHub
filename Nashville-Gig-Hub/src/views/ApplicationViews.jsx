@@ -7,6 +7,8 @@ import { MyGigs } from "../components/MyGigs";
 import { CreateGig } from "../components/CreateGig";
 import { EditGig } from "../components/EditGig";
 import { Artists } from "../components/Artist/Artists";
+import { MyProfile } from "../components/Artist/MyProfile";
+import { EditProfile } from "../components/Artist/EditProfile";
 
 export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({});
@@ -29,7 +31,18 @@ export const ApplicationViews = () => {
         }
       >
         <Route index element={<Home />} />
-        <Route path="/artists/:artistId" element={<ArtistInfo />} />
+        <Route
+          path="/artists/:artistId"
+          element={<ArtistInfo currentUser={currentUser} />}
+        />
+        <Route
+          path="/my-profile"
+          element={<MyProfile currentUser={currentUser} />}
+        />
+        <Route
+          path="/edit-profile"
+          element={<EditProfile currentUser={currentUser} />}
+        />
         <Route path="/artists" element={<Artists />} />
         <Route path="/my-gigs/:currentUser" element={<MyGigs />} />
         <Route

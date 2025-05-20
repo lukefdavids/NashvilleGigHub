@@ -10,7 +10,7 @@ export const Navbar = ({ currentUser }) => {
         <Link to="/artists">Artists</Link>
       </li>
       <li className="nav-item">
-        <Link to="/">My Profile</Link>
+        <Link to="/my-profile">My Profile</Link>
       </li>
       <li className="nav-item">
         <Link to={`/my-gigs/${currentUser.id}`}>My Gigs</Link>

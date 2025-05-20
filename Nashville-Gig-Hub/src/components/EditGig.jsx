@@ -18,31 +18,13 @@ export const EditGig = ({ currentUser }) => {
   const { gigId } = useParams();
 
   const navigate = useNavigate();
+  
   useEffect(() => {
     getAllVenues().then(setVenues);
 
     getGigById(gigId).then((res) => {
       setNewGig({ ...res, artistId: currentUser.id });
     });
-
-    // Promise.all([getAllVenues(), getGigById(gigId)]).then(
-    //   ([venueList, gig]) => {
-    //     setVenues(venueList);
-    //     gig.artistId = currentUser?.id ?? null;
-
-    //     // Normalize the cost value
-    //     const costStr = gig.cost?.toString().trim().toLowerCase();
-    //     if (costStr === "free") {
-    //       gig.cost = 0;
-    //     } else if (costStr.startsWith("$")) {
-    //       gig.cost = parseFloat(costStr.replace("$", "")) || 0;
-    //     } else {
-    //       gig.cost = parseFloat(costStr) || 0;
-    //     }
-
-    //     setNewGig(gig);
-    //   }
-    // );
   }, [gigId, currentUser]);
 
   const handleEdit = (e) => {

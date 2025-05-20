@@ -15,7 +15,7 @@ export const createUser = (user) => {
 };
 
 export const getUserById = (currentUserId) => {
-  return fetch(`http://localhost:8088/artists?id=${currentUserId}`).then(
-    (res) => res.json()
+  return fetch(`http://localhost:8088/artists/${currentUserId}`).then((res) =>
+    res.json()
   );
 };

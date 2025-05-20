@@ -1,3 +1,8 @@
+/* body {
+  background-image: none;
+  background-color: #fbeee0;
+} */
+
 #home-container {
   display: flex;
   width: 80%;
@@ -10,7 +15,6 @@
 #filters {
   display: flex;
   width: 90%;
-
   justify-content: space-between;
   padding-top: 1rem;
 }
@@ -21,13 +25,17 @@
   /* border: 5px solid black; */
   width: 100%;
   justify-content: center;
+
   flex-wrap: wrap;
+  transition: 3s ease 0s width;
 }
 
 .gig {
   display: flex;
   background-color: white;
+  border-radius: 15px;
   width: 90%;
+  height: 325px;
   margin: 15px auto;
   border: 1px solid gray;
   justify-content: center;
@@ -52,6 +60,9 @@
   width: 30%;
 }
 
+.gig-left img {
+  /* height: 172px; */
+}
 .date {
   text-align: center;
   font-size: 1.4rem;
@@ -83,4 +94,30 @@
   width: 40px;
   object-fit: contain;
   height: 40px;
+}
+
+#no-upcoming-gigs {
+  font-size: 2rem;
+}
+
+#tell-your-friends {
+  font-style: italic;
+}
+
+#no-gigs {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  border-radius: 15px;
+  width: 90%;
+  height: 325px;
+  margin: 15px auto;
+  border: 1px solid gray;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+}
+
+#search-bar {
+  width: 20%;
+  padding: 10px;
 }

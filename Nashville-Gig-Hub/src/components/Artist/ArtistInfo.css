@@ -8,12 +8,6 @@
   margin-left: 1rem;
 }
 
-#artist-right h2 {
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-
 #artist-left {
   align-items: center;
   justify-content: start;
@@ -24,12 +18,15 @@
 }
 
 #artist-info-image {
-  width: 500px;
+  height: 370px;
+  min-width: 370px;
+  border-radius: 15px;
 }
 
 #artist-info-links {
   display: flex;
   margin-top: 1rem;
+  margin: 0 auto;
   justify-content: space-between;
   width: 500px;
 }
@@ -43,21 +40,27 @@
 
 #artist-info {
   display: flex;
+  flex-direction: column;
   width: 90%;
   justify-content: center;
   font-size: 1.2rem;
   background-color: white;
   border: 1px solid gray;
-  min-height: 50rem;
+  border-radius: 20px;
   margin-top: 3rem;
   padding: 20px;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 #artist-row {
   display: flex;
   flex: 1;
   flex-direction: row;
+}
+#artist-right > *:not(:last-child),
+#artist-left > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 #artist-info-container {
@@ -72,6 +75,8 @@
 #artist-bio {
   width: 80%;
   margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   font-size: 1.2rem;
   line-height: 1.5;

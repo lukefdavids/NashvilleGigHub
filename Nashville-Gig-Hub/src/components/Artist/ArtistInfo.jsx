@@ -1,23 +1,16 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import { getArtistById } from "../../services/artistService";
 import "./ArtistInfo.css";
 import { Link } from "react-router";
+import { extractSpotifyArtistId } from "../utilities/utilities";
 
-// Helper to extract artist ID from a Spotify URL
-const extractSpotifyArtistId = (url) => {
-  try {
-    const matches = url.match(/spotify\.com\/artist\/([a-zA-Z0-9]+)/);
-    return matches?.[1] || null;
-  } catch {
-    return null;
-  }
-};
-
-export const ArtistInfo = () => {
-  const [artist, setArtist] = useState();
+export const ArtistInfo = ({ currentUser }) => {
+  const [artist, setArtist] = useState({});
   const [spotifyArtistId, setSpotifyArtistId] = useState(null);
   const { artistId } = useParams();
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     getArtistById(artistId).then(setArtist);
@@ -30,6 +23,9 @@ export const ArtistInfo = () => {
     }
   }, [artist?.spotify]);
 
+  const handleEditClick = () => {
+    navigate("/edit-profile");
+  };
   return (
     <article id="artist-info-container">
       <h1>{artist?.name}</h1>
@@ -85,6 +81,17 @@ export const ArtistInfo = () => {
             />
           </Link>
         </div>
+        {currentUser.id === artist.id && (
+          <div id="btn-container">
+            <button
+              className="button-74"
+              id="edit-btn"
+              onClick={handleEditClick}
+            >
+              Edit Profile
+            </button>
+          </div>
+        )}
       </section>
     </article>
   );

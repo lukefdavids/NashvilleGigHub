@@ -4,40 +4,97 @@ import { getAllVenues } from "../services/venueService";
 import "./Home.css";
 import { formatDateTime } from "./utilities/utilities";
 import { Link } from "react-router";
+import { getAllGenres } from "../services/genreService";
 
 export const Home = () => {
   const [gigs, setGigs] = useState([]);
   const [venues, setVenues] = useState([]);
-  const [gigWithVenue, setGigWithVenue] = useState([]);
+  const [gigWithDetails, setGigWithDetails] = useState([]);
+  const [genres, setGenres] = useState([]);
+  const [filteredGigs, setFilteredGigs] = useState([]);
+  const [selectedGenre, setSelectedGenre] = useState({});
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     getAllGigs().then(setGigs);
     getAllVenues().then(setVenues);
+    getAllGenres().then(setGenres);
   }, []);
 
   useEffect(() => {
-    if (gigs && venues) {
-      const gigsPlusVenue = gigs.map((gig) => {
+    if (gigs.length && venues.length && genres.length) {
+      const enrichedGigs = gigs.map((gig) => {
         const foundVenue = venues.find((venue) => venue.id === gig.venueId);
+        const foundGenre = genres.find(
+          (genre) => genre.id === gig.artist?.genreId
+        );
+
         return {
           ...gig,
           ...foundVenue,
+          genre: foundGenre.name,
         };
       });
 
-      setGigWithVenue(gigsPlusVenue);
+      setGigWithDetails(enrichedGigs);
     }
-  }, [gigs, venues]);
+  }, [gigs, venues, genres]);
+
+  useEffect(() => {
+    setFilteredGigs(gigWithDetails);
+  }, [gigWithDetails]);
+
+  useEffect(() => {
+    const searchResult = gigWithDetails.filter((gig) => {
+      return (
+        gig.artist.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        gig.name.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    });
+
+    setFilteredGigs(searchResult);
+  }, [searchTerm, gigWithDetails]);
+
+  const handleGenreChange = (e) => {
+    const selectedGenreName = genres.find(
+      (genre) => genre.id === parseInt(e.target.value)
+    );
+    setSelectedGenre(selectedGenreName);
+    if (parseInt(e.target.value) === 0) {
+      setFilteredGigs(gigWithDetails);
+    } else {
+      const filteredByGenre = gigWithDetails.filter(
+        (gig) => gig.artist.genreId === parseInt(e.target.value)
+      );
+      setFilteredGigs(filteredByGenre);
+    }
+  };
+
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+  };
 
   return (
     <div id="home-container">
       <h1>Nashville Gig Hub</h1>
       <div id="filters">
-        <select name="genres" />
-        <input type="text" placeholder="Search by artist or venue" />
+        <select name="genres" onChange={handleGenreChange}>
+          <option value="0">All genres</option>
+          {genres.map((genre) => (
+            <option key={genre.id} value={genre.id}>
+              {genre.name}
+            </option>
+          ))}
+        </select>
+        <input
+          id="search-bar"
+          type="search"
+          onChange={handleSearch}
+          placeholder="Search by artist or venue"
+        />
       </div>
       <div id="all-gigs-container">
-        {gigWithVenue.map((gig) => {
+        {filteredGigs.map((gig) => {
           return (
             <article className="gig" key={gig.id}>
               <div className="gig-left">
@@ -102,11 +159,27 @@ export const Home = () => {
                   <p>
                     <span>Ages: </span> {gig.ages}
                   </p>
+                  <p>
+                    <span>Genre: </span> {gig.genre}
+                  </p>
                 </div>
               </div>
             </article>
           );
         })}
+        {gigWithDetails.length > 0 && filteredGigs.length === 0 && (
+          <article id="no-gigs">
+            <div id="no-upcoming-gigs">
+              <h2>No upcoming {selectedGenre?.name} gigs</h2>{" "}
+            </div>
+            <div id="tell-your-friends">
+              <h3>
+                Know any great {selectedGenre?.name} artists in Nashville? Tell
+                them about Nashville Gig Hub!
+              </h3>
+            </div>
+          </article>
+        )}
       </div>
     </div>
   );

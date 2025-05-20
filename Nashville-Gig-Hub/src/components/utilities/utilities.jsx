@@ -19,3 +19,13 @@ export const formatDateTime = (isoString) => {
 
   return { formattedDate, formattedTime };
 };
+
+
+export const extractSpotifyArtistId = (url) => {
+  try {
+    const matches = url.match(/spotify\.com\/artist\/([a-zA-Z0-9]+)/);
+    return matches?.[1] || null;
+  } catch {
+    return null;
+  }
+};

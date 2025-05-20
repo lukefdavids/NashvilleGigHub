@@ -7,3 +7,15 @@ export const getArtistById = (artistId) => {
     res.json()
   );
 };
+
+
+
+export const updateProfile = (artistObj) => {
+  return fetch(`http://localhost:8088/artists/${artistObj.id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(artistObj),
+  }).then((res) => res.json());
+};
