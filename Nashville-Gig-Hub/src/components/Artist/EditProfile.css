@@ -8,10 +8,12 @@
 
 #bio-input {
   min-height: 5rem;
-  width: 100%;
+  width: 95%;
   resize: initial;
   padding: 0.5rem;
   font-family: inherit;
+  border-radius: 15px;
+  border: 1px solid gray;
 }
 
 #edit-title {

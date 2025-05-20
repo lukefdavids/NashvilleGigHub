@@ -78,7 +78,7 @@ export const Home = () => {
     <div id="home-container">
       <h1>Nashville Gig Hub</h1>
       <div id="filters">
-        <select name="genres" onChange={handleGenreChange}>
+        <select id="filter-bar" name="genres" onChange={handleGenreChange}>
           <option value="0">All genres</option>
           {genres.map((genre) => (
             <option key={genre.id} value={genre.id}>

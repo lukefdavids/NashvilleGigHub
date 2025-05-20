@@ -81,7 +81,7 @@ export const ArtistInfo = ({ currentUser }) => {
             />
           </Link>
         </div>
-        {currentUser.id === artist.id && (
+        {currentUser?.id === artist.id && (
           <div id="btn-container">
             <button
               className="button-74"

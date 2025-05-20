@@ -120,4 +120,12 @@
 #search-bar {
   width: 20%;
   padding: 10px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+#filter-bar {
+  border-radius: 10px;
+  border: 1px solid gray;
+  width: 20%;
 }

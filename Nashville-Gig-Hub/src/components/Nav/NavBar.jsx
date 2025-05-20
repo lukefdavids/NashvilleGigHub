@@ -1,6 +1,8 @@
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import "./NavBar.css";
 export const Navbar = ({ currentUser }) => {
+  const navigate = useNavigate();
+
   return (
     <ul className="nav">
       <li className="nav-item">
@@ -18,9 +20,19 @@ export const Navbar = ({ currentUser }) => {
       <li className="nav-item">
         <Link to="/">Calendar</Link>
       </li>
-      <li className="nav-item">
-        <Link to="/">Logout</Link>
-      </li>
+      {localStorage.getItem("gighub_user") && (
+        <li className="nav-item">
+          <Link
+            to=""
+            onClick={() => {
+              localStorage.removeItem("gighub_user");
+              navigate("/", { replace: true });
+            }}
+          >
+            Logout
+          </Link>
+        </li>
+      )}
     </ul>
   );
 };

@@ -26,9 +26,25 @@ h1 {
   color: rgb(0, 0, 0);
   font-size: 4rem;
   margin: 0;
-  font-family: "Tourney", sans-serif;
+  font-family: "Trickr", sans-serif;
   font-weight: 300;
   text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  /* border-bottom: 1px solid gray; */
+}
+
+@font-face {
+  font-family: "Trickr";
+  src: url("public/fonts/trickr-logo-font/TrickrLogo-LVvg3.ttf");
+}
+
+@font-face {
+  font-family: "Aegean";
+  src: url("public/fonts/aegean-font/Aegean-8jJ2.ttf");
+}
+
+@font-face {
+  font-family: "MusicMan";
+  src: url("public/fonts/alphamusicman-font/Alphamusicman-aAzK.ttf");
 }
 
 .button-74 {
