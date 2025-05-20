@@ -55,8 +55,12 @@ export const Register = () => {
   };
 
   const updateUser = (evt) => {
-    const copy = { ...user };
-    copy[evt.target.id] = evt.target.value;
+    const copy = {
+      ...user,
+      [evt.target.name]: evt.target.name.includes("Id")
+        ? parseInt(evt.target.value)
+        : evt.target.value,
+    };
     setUser(copy);
   };
 
@@ -84,7 +88,7 @@ export const Register = () => {
           <div className="column">
             <select id="genre" name="genreId" required onChange={updateUser}>
               <option disabled value="">
-                Select Venue:
+                Select genre:
               </option>
               {genres.map((genre) => {
                 return (

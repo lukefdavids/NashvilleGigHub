@@ -41,33 +41,34 @@ export const Home = () => {
   }, [gigs, venues, genres]);
 
   useEffect(() => {
-    setFilteredGigs(gigWithDetails);
-  }, [gigWithDetails]);
+    let gigsToFilter = [...gigWithDetails];
 
-  useEffect(() => {
-    const searchResult = gigWithDetails.filter((gig) => {
-      return (
-        gig.artist.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        gig.name.toLowerCase().includes(searchTerm.toLowerCase())
+    if (searchTerm) {
+      gigsToFilter = gigsToFilter.filter(
+        (gig) =>
+          gig.artist.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          gig.name.toLowerCase().includes(searchTerm.toLowerCase())
       );
-    });
+    }
 
-    setFilteredGigs(searchResult);
-  }, [searchTerm, gigWithDetails]);
+    if (selectedGenre?.id && selectedGenre.id !== 0) {
+      gigsToFilter = gigsToFilter.filter(
+        (gig) => gig.artist.genreId === selectedGenre.id
+      );
+    }
+
+    gigsToFilter = gigsToFilter.toSorted(
+      (a, b) => new Date(a.dateTime) - new Date(b.dateTime)
+    );
+
+    setFilteredGigs(gigsToFilter);
+  }, [searchTerm, selectedGenre, gigWithDetails]);
 
   const handleGenreChange = (e) => {
-    const selectedGenreName = genres.find(
+    const selected = genres.find(
       (genre) => genre.id === parseInt(e.target.value)
     );
-    setSelectedGenre(selectedGenreName);
-    if (parseInt(e.target.value) === 0) {
-      setFilteredGigs(gigWithDetails);
-    } else {
-      const filteredByGenre = gigWithDetails.filter(
-        (gig) => gig.artist.genreId === parseInt(e.target.value)
-      );
-      setFilteredGigs(filteredByGenre);
-    }
+    setSelectedGenre(selected || {});
   };
 
   const handleSearch = (e) => {
