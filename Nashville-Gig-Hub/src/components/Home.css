@@ -1,7 +1,3 @@
-/* body {
-  background-image: none;
-  background-color: #fbeee0;
-} */
 
 #home-container {
   display: flex;
@@ -25,9 +21,7 @@
   /* border: 5px solid black; */
   width: 100%;
   justify-content: center;
-
   flex-wrap: wrap;
-  transition: 3s ease 0s width;
 }
 
 .gig {
@@ -60,9 +54,7 @@
   width: 30%;
 }
 
-.gig-left img {
-  /* height: 172px; */
-}
+
 .date {
   text-align: center;
   font-size: 1.4rem;

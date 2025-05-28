@@ -14,7 +14,7 @@ export const MyGigs = () => {
   const { currentUser } = useParams();
 
   const navigate = useNavigate();
-
+  const today = new Date();
   useEffect(() => {
     getGigsByUserId(currentUser).then(setGigs);
     getAllVenues().then(setVenues);
@@ -22,7 +22,10 @@ export const MyGigs = () => {
 
   useEffect(() => {
     if (gigs && venues) {
-      const gigsPlusVenue = gigs.map((gig) => {
+      const sortedByDate = gigs.toSorted(
+        (a, b) => new Date(a.dateTime) - new Date(b.dateTime)
+      );
+      const gigsPlusVenue = sortedByDate.map((gig) => {
         const foundVenue = venues.find((venue) => venue.id === gig.venueId);
         return {
           ...gig,
@@ -76,63 +79,66 @@ export const MyGigs = () => {
           </button>
         </div>
         {gigsWithVenue.map((gig) => {
-          return (
-            <article className="gig" key={gig.id}>
-              <div className="gig-left">
-                <div>
-                  <h3>{gig.artist?.name}</h3>
+          if (new Date(gig.dateTime) > today) {
+            return (
+              <article className="gig" key={gig.id}>
+                <div className="gig-left">
+                  <div>
+                    <h3>{gig.artist?.name}</h3>
+                  </div>
+                  <div>
+                    <img
+                      className="artist-img"
+                      src={gig.artist.image}
+                      alt={gig.artist.name}
+                    />
+                  </div>
+                  <div className="links">
+                    <img src="/img/Instagram_logo.png" alt="Instagram logo" />
+                    <img
+                      className="spotify-img"
+                      src="/img/Spotify_logo.png"
+                      alt="Spotify logo"
+                    />
+                    <img src="/img/Facebook_logo.png" alt="Facebook logo" />
+                    <img
+                      className="website-img"
+                      src="/img/website_logo.jpg"
+                      alt="Generic Website logo"
+                    />
+                  </div>
                 </div>
-                <div>
-                  <img
-                    className="artist-img"
-                    src={gig.artist.image}
-                    alt={gig.artist.name}
-                  />
+                <div className="gig-right">
+                  <div className="date">
+                    {formatDateTime(gig.dateTime).formattedDate} @{" "}
+                    {gig.venueName}
+                  </div>
+                  <div className="gig-info">
+                    <p>Where: {gig.venueAddress}</p>
+                    <p>When: {formatDateTime(gig.dateTime).formattedTime}</p>
+                    <p>How much: {gig.cost === 0 ? "Free" : `$${gig.cost}`}</p>
+                    <p>Ages: {gig.ages}</p>
+                  </div>
+                  <div id="gig-buttons">
+                    <button
+                      value={gig.id}
+                      className="button-74"
+                      onClick={handleEdit}
+                    >
+                      Edit
+                    </button>
+                    <button
+                      value={gig.id}
+                      className="button-74"
+                      onClick={handleDelete}
+                    >
+                      Delete
+                    </button>
+                  </div>
                 </div>
-                <div className="links">
-                  <img src="/img/Instagram_logo.png" alt="Instagram logo" />
-                  <img
-                    className="spotify-img"
-                    src="/img/Spotify_logo.png"
-                    alt="Spotify logo"
-                  />
-                  <img src="/img/Facebook_logo.png" alt="Facebook logo" />
-                  <img
-                    className="website-img"
-                    src="/img/website_logo.jpg"
-                    alt="Generic Website logo"
-                  />
-                </div>
-              </div>
-              <div className="gig-right">
-                <div className="date">
-                  {formatDateTime(gig.dateTime).formattedDate} @ {gig.venueName}
-                </div>
-                <div className="gig-info">
-                  <p>Where: {gig.venueAddress}</p>
-                  <p>When: {formatDateTime(gig.dateTime).formattedTime}</p>
-                  <p>How much: {gig.cost === 0 ? "Free" : `$${gig.cost}`}</p>
-                  <p>Ages: {gig.ages}</p>
-                </div>
-                <div id="gig-buttons">
-                  <button
-                    value={gig.id}
-                    className="button-74"
-                    onClick={handleEdit}
-                  >
-                    Edit
-                  </button>
-                  <button
-                    value={gig.id}
-                    className="button-74"
-                    onClick={handleDelete}
-                  >
-                    Delete
-                  </button>
-                </div>
-              </div>
-            </article>
-          );
+              </article>
+            );
+          }
         })}
       </div>
     </div>

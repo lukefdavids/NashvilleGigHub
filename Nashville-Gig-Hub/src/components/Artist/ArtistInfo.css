@@ -47,7 +47,7 @@
   background-color: white;
   border: 1px solid gray;
   border-radius: 20px;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   padding: 20px;
   flex-wrap: wrap;
   gap: 1rem;
@@ -66,8 +66,10 @@
 #artist-info-container {
   display: flex;
   /* padding: 20 10px; */
+  /* border: 1px solid black; */
   width: 90%;
   margin: 3rem auto;
+  align-items: center;
   text-align: center;
   flex-direction: column;
 }
@@ -82,4 +84,25 @@
   line-height: 1.5;
   padding: 1rem;
   border-top: 1px solid #ccc;
+}
+
+#upcoming-gigs {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#upcoming-gigs-container {
+  display: flex;
+  flex-direction: column;
+  /* border: 5px solid black; */
+  width: 90%;
+  margin: 3rem auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.artist-info-gig-img {
+  width: 225px;
+  border-radius: 15px;
 }

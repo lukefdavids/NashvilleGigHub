@@ -9,13 +9,13 @@ body {
   /* background-color: #fbeee0; */
 }
 
-.tourney-gighub {
+/* .tourney-gighub {
   font-family: "Tourney", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
   font-variation-settings: "wdth" 300;
-}
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -35,10 +35,10 @@ h1 {
 
 @font-face {
   font-family: "Trickr";
-  src: url("public/fonts/trickr-logo-font/TrickrLogo-LVvg3.ttf");
+  src: url("/fonts/trickr-logo-font/TrickrLogo-LVvg3.ttf");
 }
 
-@font-face {
+/* @font-face {
   font-family: "Aegean";
   src: url("public/fonts/aegean-font/Aegean-8jJ2.ttf");
 }
@@ -46,7 +46,7 @@ h1 {
 @font-face {
   font-family: "MusicMan";
   src: url("public/fonts/alphamusicman-font/Alphamusicman-aAzK.ttf");
-}
+} */
 
 .button-74 {
   background-color: #fbeee0;

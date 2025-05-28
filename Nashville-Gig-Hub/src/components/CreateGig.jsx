@@ -6,6 +6,7 @@ import { useNavigate } from "react-router";
 
 export const CreateGig = ({ currentUser }) => {
   const [venues, setVenues] = useState([]);
+  const [error, setError] = useState("");
   const [newGig, setNewGig] = useState({
     artistId: null,
     venueId: 0,
@@ -13,7 +14,7 @@ export const CreateGig = ({ currentUser }) => {
     cost: "",
     ages: "",
   });
-
+  const today = new Date();
   const navigate = useNavigate();
   useEffect(() => {
     getAllVenues().then(setVenues);
@@ -27,15 +28,17 @@ export const CreateGig = ({ currentUser }) => {
       }));
     }
   }, [currentUser]);
+
   const handleCreate = (e) => {
     e.preventDefault();
-
-    if (newGig.venueId && newGig.dateTime && newGig.cost && newGig.ages) {
+    if (!newGig.venueId || !newGig.dateTime || !newGig.cost || !newGig.ages) {
+      window.alert("Please complete all required fields");
+    } else if (new Date(newGig.dateTime) < today) {
+      setError("Cannot create gigs in the past");
+    } else {
       postNewGig(newGig).then(() => {
         navigate(`/my-gigs/${currentUser.id}`);
       });
-    } else {
-      window.alert("Please complete all required fields");
     }
   };
 
@@ -87,6 +90,7 @@ export const CreateGig = ({ currentUser }) => {
             type="datetime-local"
             name="dateTime"
           />
+          {error && <p className="error">{error}</p>}
         </div>
       </section>
       <section className="row">
