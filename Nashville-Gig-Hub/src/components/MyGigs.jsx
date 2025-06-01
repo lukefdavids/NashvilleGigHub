@@ -5,6 +5,7 @@ import { deleteGig, getGigsByUserId } from "../services/gigService";
 import { formatDateTime } from "./utilities/utilities";
 import { getAllVenues } from "../services/venueService";
 import "./MyGigs.css";
+import { Link } from "react-router";
 
 export const MyGigs = () => {
   //   const [user, setUser] = useState({});
@@ -94,29 +95,53 @@ export const MyGigs = () => {
                     />
                   </div>
                   <div className="links">
-                    <img src="/img/Instagram_logo.png" alt="Instagram logo" />
-                    <img
-                      className="spotify-img"
-                      src="/img/Spotify_logo.png"
-                      alt="Spotify logo"
-                    />
-                    <img src="/img/Facebook_logo.png" alt="Facebook logo" />
-                    <img
-                      className="website-img"
-                      src="/img/website_logo.jpg"
-                      alt="Generic Website logo"
-                    />
+                    <Link target="_blank" to={`${gig.artist.instagram}`}>
+                      <img src="/img/Instagram_logo.png" alt="Instagram logo" />
+                    </Link>
+                    <Link target="_blank" to={`${gig.artist.spotify}`}>
+                      <img
+                        className="spotify-img"
+                        src="/img/Spotify_logo.png"
+                        alt="Spotify logo"
+                      />
+                    </Link>
+                    <Link target="_blank" to={`${gig.artist.facebook}`}>
+                      <img src="/img/Facebook_logo.png" alt="Facebook logo" />
+                    </Link>
+
+                    <Link target="_blank" to={`${gig.artist.website}`}>
+                      <img
+                        className="website-img"
+                        src="/img/website_logo.jpg"
+                        alt="Generic Website logo"
+                      />
+                    </Link>
                   </div>
                 </div>
                 <div className="gig-right">
                   <div className="date">
                     {formatDateTime(gig.dateTime).formattedDate} @{" "}
-                    {gig.venueName}
+                    <Link to={gig.venueWebsite} target="_blank">
+                      {gig.venueName}
+                    </Link>
                   </div>
                   <div className="gig-info">
-                    <p>Where: {gig.venueAddress}</p>
+                    <p>
+                      Where:{" "}
+                      <Link
+                        to={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
+                          gig.venueAddress
+                        )}`}
+                        target="_blank"
+                      >
+                        {gig.venueAddress}
+                      </Link>
+                    </p>
                     <p>When: {formatDateTime(gig.dateTime).formattedTime}</p>
-                    <p>How much: {gig.cost === 0 ? "Free" : `$${gig.cost}`}</p>
+                    <p>
+                      How much:{" "}
+                      {Number(gig.cost) === 0 ? "Free" : `$${gig.cost}`}
+                    </p>
                     <p>Ages: {gig.ages}</p>
                   </div>
                   <div id="gig-buttons">

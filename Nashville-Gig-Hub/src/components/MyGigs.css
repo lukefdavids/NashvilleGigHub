@@ -13,3 +13,8 @@
 #create-gig-btn:hover {
   background-color: #fbeee0;
 }
+
+.artist-img {
+  width: 175px;
+  height: 175px;
+}

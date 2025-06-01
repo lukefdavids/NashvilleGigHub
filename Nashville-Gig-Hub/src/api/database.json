@@ -83,7 +83,7 @@
       "bio": "Raised in the Ozarks, Kimberly Atwood's core is rooted in her small-town, close-knit family upbringing. With a blue-collar heritage and unshakable dream, Atwood moved to Nashville in 2016 to pursue her passion for singing and songwriting.",
       "image": "/img/KimberlyAtwood.jpeg",
       "facebook": "https://www.facebook.com/kimberlyatwoodofficial/",
-      "instagram": "https://www.instagram.com/kimberlyatwoodmusic/",
+      "instagram": "https://www.instagram.com/kimberlyatwoodofficial/",
       "spotify": "https://open.spotify.com/artist/1lF6TQ4ZDYJ0netQC07bDw?si=-FyEvPgbRN-V08hRxvhjxg",
       "website": "https://kimberlyatwood.co/",
       "genreId": 3
@@ -135,7 +135,7 @@
       "id": 6,
       "name": "The End",
       "address": "2219 Elliston Pl, Nashville, TN 37203",
-      "website": "https://www.theendnashville.com/"
+      "website": "https://endnashville.com/"
     },
     {
       "id": 7,
@@ -222,14 +222,6 @@
       "id": 2
     },
     {
-      "id": 3,
-      "artistId": 1,
-      "venueId": 1,
-      "dateTime": "2025-06-10T20:00:00",
-      "cost": "8",
-      "ages": "21+"
-    },
-    {
       "artistId": 1,
       "venueId": 3,
       "dateTime": "2025-06-21T19:00",
@@ -255,11 +247,51 @@
     },
     {
       "artistId": 1,
-      "venueId": 3,
-      "dateTime": "2025-05-29T00:47",
-      "cost": "13",
+      "venueId": 6,
+      "dateTime": "2025-05-29T21:00",
+      "cost": "15",
       "ages": "21+",
       "id": 7
+    },
+    {
+      "artistId": 1,
+      "venueId": 6,
+      "dateTime": "2025-05-30T18:28",
+      "cost": "0",
+      "ages": "18+",
+      "id": 8
+    },
+    {
+      "artistId": 1,
+      "venueId": 3,
+      "dateTime": "2025-05-31T18:54",
+      "cost": "0",
+      "ages": "21+",
+      "id": 9
+    },
+    {
+      "artistId": 6,
+      "venueId": 5,
+      "dateTime": "2025-06-20T19:00",
+      "cost": "10",
+      "ages": "All Ages",
+      "id": 10
+    },
+    {
+      "artistId": 5,
+      "venueId": 16,
+      "dateTime": "2025-07-14T18:30",
+      "cost": "5",
+      "ages": "18+",
+      "id": 11
+    },
+    {
+      "artistId": 8,
+      "venueId": 8,
+      "dateTime": "2025-09-10T21:30",
+      "cost": "8",
+      "ages": "21+",
+      "id": 12
     }
   ],
   "genres": [

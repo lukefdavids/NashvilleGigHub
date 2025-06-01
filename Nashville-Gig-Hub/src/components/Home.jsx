@@ -33,7 +33,11 @@ export const Home = () => {
 
         return {
           ...gig,
-          ...foundVenue,
+          gigId: gig.id,
+          venueId: foundVenue.id,
+          venueName: foundVenue.name,
+          venueAddress: foundVenue.address,
+          venueWebsite: foundVenue.website,
           genre: foundGenre.name,
         };
       });
@@ -49,7 +53,7 @@ export const Home = () => {
       gigsToFilter = gigsToFilter.filter(
         (gig) =>
           gig.artist.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-          gig.name.toLowerCase().includes(searchTerm.toLowerCase())
+          gig.venueName.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
 
@@ -138,18 +142,21 @@ export const Home = () => {
                 </div>
                 <div className="gig-right">
                   <div className="date">
-                    {formatDateTime(gig.dateTime).formattedDate} @ {gig.name}
+                    {formatDateTime(gig.dateTime).formattedDate} @{" "}
+                    <Link to={gig.venueWebsite} target="_blank">
+                      {gig.venueName}
+                    </Link>
                   </div>
                   <div className="gig-info">
                     <p>
                       <span>Where: </span>
                       <Link
                         to={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
-                          gig.address
+                          gig.venueAddress
                         )}`}
                         target="_blank"
                       >
-                        {gig.address}
+                        {gig.venueAddress}
                       </Link>
                     </p>
                     <p>
@@ -158,7 +165,7 @@ export const Home = () => {
                     </p>
                     <p>
                       <span>How much: </span>{" "}
-                      {gig.cost === 0 ? "Free" : `$${gig.cost}`}
+                      {Number(gig.cost) === 0 ? "Free" : `$${gig.cost}`}
                     </p>
                     <p>
                       <span>Ages: </span> {gig.ages}

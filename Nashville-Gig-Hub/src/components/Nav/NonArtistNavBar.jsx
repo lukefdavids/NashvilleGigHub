@@ -9,9 +9,7 @@ export const NonArtistNavBar = () => {
       <li className="nav-item">
         <Link to="/artists">Artists</Link>
       </li>
-      <li className="nav-item">
-        <Link to="/">Calendar</Link>
-      </li>
+
       <li className="nav-item">
         <Link to="/login">
           Artist <br /> sign-in

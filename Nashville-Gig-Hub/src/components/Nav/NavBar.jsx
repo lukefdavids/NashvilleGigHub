@@ -17,9 +17,7 @@ export const Navbar = ({ currentUser }) => {
       <li className="nav-item">
         <Link to={`/my-gigs/${currentUser.id}`}>My Gigs</Link>
       </li>
-      <li className="nav-item">
-        <Link to="/">Calendar</Link>
-      </li>
+
       {localStorage.getItem("gighub_user") && (
         <li className="nav-item">
           <Link

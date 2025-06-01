@@ -104,5 +104,6 @@
 
 .artist-info-gig-img {
   width: 225px;
-  border-radius: 15px;
+  height: 225px;
+  /* border-radius: 15px; */
 }
