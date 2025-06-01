@@ -223,10 +223,10 @@
     },
     {
       "artistId": 1,
-      "venueId": 3,
-      "dateTime": "2025-06-21T19:00",
-      "cost": 15,
-      "ages": "21+",
+      "venueId": 1,
+      "dateTime": "2025-06-21T20:00",
+      "cost": "10",
+      "ages": "All Ages",
       "id": 4
     },
     {
