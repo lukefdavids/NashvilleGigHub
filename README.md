@@ -9,13 +9,11 @@ Often local Nashville artists’ shows get lost in the sheer amount of events ha
 
 Prerequisites:
 Node.js (v18+ recommended)
-
 npm (comes with Node)
-
 json-server installed globally or as a dev dependency
 
 
-Follow these instructions to get Nashville Gig Hub up and running on your machine.
+Follow these instructions to get 'Nashville Gig Hub' up and running on your machine.
 
 1. Clone the repo via SSH : 
 git clone git@github.com:lukefdavids/NashvilleGigHub.git
