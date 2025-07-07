@@ -17,7 +17,7 @@ Follow these instructions to get 'Nashville Gig Hub' up and running on your mach
 
 1. Clone the repo via SSH:   
 In your terminal run: `git clone git@github.com:lukefdavids/NashvilleGigHub.git`  
-cd to the projects directory "Nashville-Gig-Hub"
+cd to the projects root directory "Nashville-Gig-Hub" if not already there
 
 2. Install dependencies:
 `npm install`
