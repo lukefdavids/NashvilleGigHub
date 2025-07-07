@@ -12,20 +12,18 @@ Node.js (v18+ recommended)
 npm (comes with Node)  
 json-server
 
-
 Follow these instructions to get 'Nashville Gig Hub' up and running on your machine.
 
-1. Clone the repo via SSH:   
-In your terminal run: `git clone git@github.com:lukefdavids/NashvilleGigHub.git`  
-cd to the projects root directory "Nashville-Gig-Hub" if not already there
+1. Clone the repo via SSH:  
+   In your terminal run: `git clone git@github.com:lukefdavids/NashvilleGigHub.git`  
+   cd to the projects root directory "Nashville-Gig-Hub" if not already there
 
 2. Install dependencies:
-`npm install`
+   `npm install`
 
 3. Start the front-end server:
-`npm start`
+   `npm run dev`
 
 4. Start the mock API JSON server:  
-cd to src/api  
-Run: `json-server -p 8088 -w database.json`
-
+   cd to src/api  
+   Run: `json-server -p 8088 -w database.json`
