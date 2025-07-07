@@ -4,6 +4,7 @@ import { Home } from "../components/Home";
 import { Artists } from "../components/Artist/Artists";
 import { NonArtistNavBar } from "../components/Nav/NonArtistNavBar";
 import { useEffect, useState } from "react";
+import { Footer } from "../components/Nav/Footer";
 
 export const NonArtistViews = () => {
   const [currentUser, setCurrentUser] = useState({});
@@ -21,6 +22,7 @@ export const NonArtistViews = () => {
           <>
             <NonArtistNavBar />
             <Outlet />
+            <Footer />
           </>
         }
       >

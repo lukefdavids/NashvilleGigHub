@@ -9,6 +9,7 @@ import { EditGig } from "../components/EditGig";
 import { Artists } from "../components/Artist/Artists";
 import { MyProfile } from "../components/Artist/MyProfile";
 import { EditProfile } from "../components/Artist/EditProfile";
+import { Footer } from "../components/Nav/Footer";
 
 export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({});
@@ -27,6 +28,7 @@ export const ApplicationViews = () => {
           <>
             <Navbar currentUser={currentUser} />
             <Outlet />
+            <Footer />
           </>
         }
       >

@@ -47,6 +47,9 @@ export const Login = () => {
               />
             </div>
           </fieldset>
+          <div id="sign-in-msg">
+            Sign-in as "Luke Davids" to demo full site functionality{" "}
+          </div>
           <fieldset className="auth-fieldset">
             <div>
               <button className="button-74" type="submit">

@@ -52,3 +52,8 @@
   padding: 1rem;
   border: none;
 }
+
+#sign-in-msg {
+  color: rgb(185, 30, 30);
+  font-style: italic;
+}

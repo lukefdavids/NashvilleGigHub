@@ -18,7 +18,7 @@ export const EditGig = ({ currentUser }) => {
   const { gigId } = useParams();
 
   const navigate = useNavigate();
-  
+
   useEffect(() => {
     getAllVenues().then(setVenues);
 
@@ -44,7 +44,7 @@ export const EditGig = ({ currentUser }) => {
 
     setNewGig({
       ...newGig,
-      [name]: value,
+      [name]: name.includes("Id") ? parseInt(value) : value,
     });
   };
 

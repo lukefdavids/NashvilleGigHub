@@ -98,6 +98,17 @@
       "spotify": "https://open.spotify.com/artist/4PztbfCny3X9gBjlpgvjYo",
       "website": "https://www.aaronleetasjan.com/",
       "genreId": 11
+    },
+    {
+      "id": 10,
+      "name": "Alex Hall",
+      "bio": "Alex Hall’s artistry is centered around his guitar playing and songwriting which serve as the foundation to his debut EP, Six Strings. Co-produced by Alex, Pete Good and AJ Babcock, the EP includes featured guitarists and vocalists on each song. The features include John Osborne, Brad Paisley, Vince Gill, Brad Tursi of Old Dominion, Tenille Townes and Kassi Ashton. Originally from Gainesville, Georgia Hall is the epitome of what it means to be an artist. After picking up an acoustic guitar at the age of 14, he quickly set to work learning every Elvis Presley song on the King’s ELV1S: 30 No. 1 Hits album – his raw talent earning him his first singing gig at a local restaurant. While singing week nights at the restaurant and preforming local shows, Alex captured the attention of a Nashville booking agent, which resulted in about 125 shows a year throughout high school...a feat for any artist, let alone someone still receiving a report card...and a valuable introduction into the country music community. Drawing influence from artists like his hero, Elvis, Keith Urban and Eric Church, along with bona fide rockers like Bruce Springsteen, and John Mayer, Alex has found a way to combine these sounds into his own atomic musical style.",
+      "image": " /img/AlexHall.jpg",
+      "facebook": " https://www.facebook.com/musicbyalexhall",
+      "instagram": " https://www.instagram.com/musicbyalexhall/",
+      "spotify": "https://open.spotify.com/artist/0uQBEPm8cAptCNmTWhio8o?si=yv-234shRvW8Iw0zfhSFrg",
+      "website": "https://www.musicbyalexhall.com",
+      "genreId": 9
     }
   ],
   "venues": [
@@ -292,6 +303,158 @@
       "cost": "8",
       "ages": "21+",
       "id": 12
+    },
+    {
+      "id": 13,
+      "artistId": 2,
+      "venueId": 10,
+      "dateTime": "2025-08-15T20:00",
+      "cost": 10,
+      "ages": "21+"
+    },
+    {
+      "id": 14,
+      "artistId": 3,
+      "venueId": 12,
+      "dateTime": "2025-09-12T21:00",
+      "cost": 15,
+      "ages": "18+"
+    },
+    {
+      "id": 15,
+      "artistId": 4,
+      "venueId": 4,
+      "dateTime": "2025-10-03T19:30",
+      "cost": 20,
+      "ages": "All Ages"
+    },
+    {
+      "id": 16,
+      "artistId": 5,
+      "venueId": 13,
+      "dateTime": "2025-11-07T21:00",
+      "cost": 10,
+      "ages": "21+"
+    },
+    {
+      "id": 17,
+      "artistId": 6,
+      "venueId": 11,
+      "dateTime": "2025-12-12T20:00",
+      "cost": 5,
+      "ages": "All Ages"
+    },
+    {
+      "id": 18,
+      "artistId": 7,
+      "venueId": 17,
+      "dateTime": "2026-01-24T21:00",
+      "cost": 0,
+      "ages": "All Ages"
+    },
+    {
+      "id": 19,
+      "artistId": 8,
+      "venueId": 7,
+      "dateTime": "2026-02-13T20:30",
+      "cost": 20,
+      "ages": "21+"
+    },
+    {
+      "id": 20,
+      "artistId": 9,
+      "venueId": 14,
+      "dateTime": "2026-03-06T22:00",
+      "cost": 5,
+      "ages": "21+"
+    },
+    {
+      "id": 21,
+      "artistId": 10,
+      "venueId": 9,
+      "dateTime": "2026-04-17T20:00",
+      "cost": 15,
+      "ages": "All Ages"
+    },
+    {
+      "id": 22,
+      "artistId": 2,
+      "venueId": 1,
+      "dateTime": "2026-05-01T19:00",
+      "cost": 10,
+      "ages": "18+"
+    },
+    {
+      "id": 23,
+      "artistId": 3,
+      "venueId": 6,
+      "dateTime": "2026-05-16T20:30",
+      "cost": 0,
+      "ages": "21+"
+    },
+    {
+      "id": 24,
+      "artistId": 4,
+      "venueId": 8,
+      "dateTime": "2026-06-05T21:00",
+      "cost": 5,
+      "ages": "18+"
+    },
+    {
+      "id": 25,
+      "artistId": 5,
+      "venueId": 2,
+      "dateTime": "2025-10-25T20:00",
+      "cost": 0,
+      "ages": "All Ages"
+    },
+    {
+      "id": 26,
+      "artistId": 6,
+      "venueId": 15,
+      "dateTime": "2025-11-21T21:00",
+      "cost": 15,
+      "ages": "21+"
+    },
+    {
+      "id": 27,
+      "artistId": 7,
+      "venueId": 16,
+      "dateTime": "2026-03-21T20:00",
+      "cost": 10,
+      "ages": "18+"
+    },
+    {
+      "id": 28,
+      "artistId": 8,
+      "venueId": 3,
+      "dateTime": "2026-01-09T19:30",
+      "cost": 5,
+      "ages": "All Ages"
+    },
+    {
+      "id": 29,
+      "artistId": 9,
+      "venueId": 5,
+      "dateTime": "2026-02-27T21:00",
+      "cost": 20,
+      "ages": "21+"
+    },
+    {
+      "id": 30,
+      "artistId": 10,
+      "venueId": 14,
+      "dateTime": "2026-06-12T20:00",
+      "cost": 10,
+      "ages": "21+"
+    },
+    {
+      "artistId": 1,
+      "venueId": 1,
+      "dateTime": "2025-10-17T20:00",
+      "cost": "10",
+      "ages": "21+",
+      "id": 31
     }
   ],
   "genres": [

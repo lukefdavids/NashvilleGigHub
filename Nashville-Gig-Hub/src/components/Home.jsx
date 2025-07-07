@@ -110,11 +110,13 @@ export const Home = () => {
                     <h3>{gig.artist?.name}</h3>
                   </div>
                   <div>
-                    <img
-                      className="artist-img"
-                      src={gig.artist.image}
-                      alt={gig.artist.name}
-                    />
+                    <Link to={`/artists/${gig.artist.id}`} key={gig.artist.id}>
+                      <img
+                        className="artist-img"
+                        src={gig.artist.image}
+                        alt={gig.artist.name}
+                      />
+                    </Link>
                   </div>
                   <div className="links">
                     <Link target="_blank" to={`${gig.artist.instagram}`}>
