@@ -7,12 +7,13 @@ Often local Nashville artists’ shows get lost in the sheer amount of events ha
 
 # Installation Instructions:
 
-Prerequisites
+Prerequisites:
 Node.js (v18+ recommended)
+
 npm (comes with Node)
+
 json-server installed globally or as a dev dependency
 
-You can install it globally if you haven’t already: npm install -g json-server
 
 Follow these instructions to get Nashville Gig Hub up and running on your machine.
 
