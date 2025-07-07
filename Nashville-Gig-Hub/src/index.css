@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  /* background-image: url(public/img/backgrounds/Nashville1.jpg);
+  background-size: contain; */
+  /* background-repeat: no-repeat; */
+  background-color: #fbeee0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* background-color: #fbeee0; */
+}
+
+/* .tourney-gighub {
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 300;
+} */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 4rem;
+  margin: 0;
+  font-family: "Trickr", sans-serif;
+  font-weight: 300;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  margin-bottom: 1rem;
+  /* border-bottom: 1px solid gray; */
+}
+
+@font-face {
+  font-family: "Trickr";
+  src: url("/fonts/trickr-logo-font/TrickrLogo-LVvg3.ttf");
+}
+
+/* @font-face {
+  font-family: "Aegean";
+  src: url("public/fonts/aegean-font/Aegean-8jJ2.ttf");
+}
+
+@font-face {
+  font-family: "MusicMan";
+  src: url("public/fonts/alphamusicman-font/Alphamusicman-aAzK.ttf");
+} */
+
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 3px 3px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #faf3eb;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 100px;
+    padding: 0 25px;
+  }
+}

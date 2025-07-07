@@ -1,0 +1,20 @@
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+}
+
+.nav-item {
+  list-style-type: none;
+  flex-basis: 16.66%;
+  text-align: center;
+  font-family: "Trickr";
+  font-size: 20px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: rgb(36, 35, 35);
+}

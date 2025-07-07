@@ -1,0 +1,506 @@
+{
+  "artists": [
+    {
+      "id": 1,
+      "name": "Luke Davids",
+      "bio": "Luke Davids is a London-born singer-songwriter with piano-based songs and inventive arrangements that evoke the refined hooks of The Beatles, Billy Joel, Elvis Costello and Ben Folds Five. His music is described as “sharp, accessibly sophisticated, and refreshingly sincere.”",
+      "image": "/img/LukeDavids.jpeg",
+      "facebook": "https://www.facebook.com/lukedavidsmusic",
+      "instagram": "https://www.instagram.com/lukefdavids/?hl=en",
+      "spotify": "https://open.spotify.com/artist/68BB5oeFQgN3OfC26JdTpz?si=mAc3e0woSEW3ILGSp_1B0Q",
+      "website": "https://www.lukedavids.com",
+      "genreId": 11
+    },
+    {
+      "id": 2,
+      "name": "Corey Congilio",
+      "bio": "Corey Congilio is a seasoned guitarist, educator, and producer based in Nashville, Tennessee. Born and raised in Phillipsburg, New Jersey, he was introduced to music by his family and began playing guitar at the age of 13. After studying audio engineering at the Art Institute of Pittsburgh, he became an in-demand session player and producer.\n\nIn 2014, he moved to Nashville, where he has performed with artists such as Joss Stone, David Lee Murphy, Lucie Silvas, Radney Foster, Cassadee Pope, Derek St. Holmes, Danielle Bradberry, and Laura Bell Bundy. Corey has authored over 30 instructional guitar courses and is known for his work with TrueFire, Brett Papa, and Your Guitar Sage.\n\nHe also hosts weekly lessons and gear demos on his YouTube channel. In addition to his teaching, Corey writes and performs his own music, blending traditional blues with contemporary rock and country influences.",
+      "image": "/img/CoreyCongilio.jpg",
+      "facebook": "https://www.facebook.com/coreycongiliomusic",
+      "instagram": "https://www.instagram.com/coreycongilio/#",
+      "spotify": "https://open.spotify.com/artist/1KfQL0KSth4B5r0FZYiDQu",
+      "website": "https://coreycongilio.com/",
+      "genreId": 2
+    },
+    {
+      "id": 3,
+      "name": "Nicole Boggs & The Reel",
+      "bio": "Nicole Boggs & The Reel are questioning everything. Rooted in three-part harmony and existential blues, they inject rock ‘n’ roll riffs and vindicated vocals into social commentary, holding a mirror to the absurdity of modern life.\n\nNicole Boggs (bass, lead vox), Alex Kramer (guitars, vox), and Sam Gyllenhaal (guitars, vox) bring drastically different personalities, philosophies and influences to the table. The songwriting team has crafted their sound by zeroing in on each other’s strengths and never shying away from hard conversations. They build common ground through the tension and release of creating together; they don’t settle until everyone is satisfied.\n\nGrowing up in musical families, they each walked solo musical paths before coming together for their first official band release, *Scenes From Last Year* in 2019. Dripping with razor-edged sarcasm, their hard-hitting follow-up EP *None of Your Business* dropped in the summer of 2020, in the depths of the first wave of Covid-19. Since then, the group has been honing their collective sound behind the scenes, quietly and diligently working on their upcoming release, *Dystopian Book Club*.\n\nThis group of unusual suspects share a love for The Beatles, books, and cultural criticism. They delight in debating the meaning of words and hold the belief that the personal is political. They are always evolving, challenging each other and reflecting the world as they see it in hope that transparency will one day shift the digital tides.",
+      "image": "/img/NicoleBoggs.jpg",
+      "facebook": "https://www.facebook.com/dystopianbookclub/",
+      "instagram": "https://www.instagram.com/dystopianbookclub/",
+      "spotify": "https://open.spotify.com/artist/67dWh1CLdowCzryNF4pxFh?si=hxDPVj_mS-i9b8HM-Aa_Ng",
+      "website": "https://www.nicoleboggsandthereel.com",
+      "genreId": 10
+    },
+    {
+      "id": 4,
+      "name": "Judy Blank",
+      "bio": "Judy Blank is a Dutch-born, Nashville-based singer-songwriter who blends retro soul, indie edge, and folk storytelling into a sound that’s both timeless and refreshingly modern.",
+      "image": "/img/JudyBlank.jpg.webp",
+      "facebook": "https://www.facebook.com/judyblankmusic",
+      "instagram": "https://www.instagram.com/judyblankmusic/",
+      "spotify": "https://open.spotify.com/artist/2Kqa4BYcpEq4KXX9fYmRpH",
+      "website": "https://judyblank.com",
+      "genreId": 7
+    },
+    {
+      "id": 5,
+      "name": "Guthrie Trapp",
+      "bio": "Guthrie Trapp is one of Nashville’s preeminent guitar talents, known for his taste, touch, and tone. He has performed and recorded with numerous artists and continues to influence the music scene with his exceptional guitar skills.",
+      "image": "/img/GuthrieTrapp.jpg",
+      "facebook": "https://www.facebook.com/guthrietrappmusic",
+      "instagram": "https://www.instagram.com/guthrietrapp/",
+      "spotify": "https://open.spotify.com/artist/4CP7yvfFofQ98f1rN5VcAQ?si=5oYehk26TCm0saxIUO5GlA",
+      "website": "https://guthrietrapp.com",
+      "genreId": 2
+    },
+    {
+      "id": 6,
+      "name": "Emily West",
+      "bio": "Emily West is a critically acclaimed singer-songwriter known for her evocative voice and compelling stage presence. Born in Waterloo, Iowa, she began her musical journey at a young age, displaying a natural talent for storytelling through song.",
+      "image": "/img/EmilyWest.jpg",
+      "facebook": "https://www.facebook.com/EmilyWestOfficial",
+      "instagram": "https://www.instagram.com/emilywestmusic/",
+      "spotify": "https://open.spotify.com/artist/20YJEBSWm14EDzjbXNcwDA",
+      "website": "https://theemilywest.com",
+      "genreId": 3
+    },
+    {
+      "id": 7,
+      "name": "Sam Lewis",
+      "bio": "Sam Lewis is a Nashville-based musician with a unique sound that blends Americana, blues, and soul. His music is soulful and heartfelt, with lyrics that speak to the human experience.",
+      "image": "/img/SamLewis.png",
+      "facebook": "https://www.facebook.com/samlewistunes",
+      "instagram": "https://www.instagram.com/samlewistunes/",
+      "spotify": "https://open.spotify.com/artist/0DPtkH76PvvKbBO1GYrLYp",
+      "website": "https://www.samlewistunes.com",
+      "genreId": 2
+    },
+    {
+      "id": 8,
+      "name": "Kimberly Atwood",
+      "bio": "Raised in the Ozarks, Kimberly Atwood's core is rooted in her small-town, close-knit family upbringing. With a blue-collar heritage and unshakable dream, Atwood moved to Nashville in 2016 to pursue her passion for singing and songwriting.",
+      "image": "/img/KimberlyAtwood.jpeg",
+      "facebook": "https://www.facebook.com/kimberlyatwoodofficial/",
+      "instagram": "https://www.instagram.com/kimberlyatwoodofficial/",
+      "spotify": "https://open.spotify.com/artist/1lF6TQ4ZDYJ0netQC07bDw?si=-FyEvPgbRN-V08hRxvhjxg",
+      "website": "https://kimberlyatwood.co/",
+      "genreId": 3
+    },
+    {
+      "id": 9,
+      "name": "Aaron Lee Tasjan",
+      "bio": "Aaron Lee Tasjan is a Nashville-based singer-songwriter and guitarist known for his genre-defying sound that blends glam rock, indie folk, and Americana. Originally from Ohio, Tasjan built his career with a fearless, boundary-pushing style and wry lyrical wit. He has performed with the New York Dolls, produced solo albums to critical acclaim, and earned a reputation for his flamboyant fashion sense and deeply introspective songwriting.\n\nHis albums, including *Karma for Cheap* and *Tasjan! Tasjan! Tasjan!*, explore themes of identity, self-acceptance, and the ever-evolving nature of the music industry. With a loyal following and growing recognition, Aaron continues to shape Nashville’s alt-Americana scene with his bold authenticity.",
+      "image": "/img/AaronLeeTasjan.jpg",
+      "facebook": "https://www.facebook.com/aaronleetasjanmusic",
+      "instagram": "https://www.instagram.com/aaronleetasjan/",
+      "spotify": "https://open.spotify.com/artist/4PztbfCny3X9gBjlpgvjYo",
+      "website": "https://www.aaronleetasjan.com/",
+      "genreId": 11
+    },
+    {
+      "id": 10,
+      "name": "Alex Hall",
+      "bio": "Alex Hall’s artistry is centered around his guitar playing and songwriting which serve as the foundation to his debut EP, Six Strings. Co-produced by Alex, Pete Good and AJ Babcock, the EP includes featured guitarists and vocalists on each song. The features include John Osborne, Brad Paisley, Vince Gill, Brad Tursi of Old Dominion, Tenille Townes and Kassi Ashton. Originally from Gainesville, Georgia Hall is the epitome of what it means to be an artist. After picking up an acoustic guitar at the age of 14, he quickly set to work learning every Elvis Presley song on the King’s ELV1S: 30 No. 1 Hits album – his raw talent earning him his first singing gig at a local restaurant. While singing week nights at the restaurant and preforming local shows, Alex captured the attention of a Nashville booking agent, which resulted in about 125 shows a year throughout high school...a feat for any artist, let alone someone still receiving a report card...and a valuable introduction into the country music community. Drawing influence from artists like his hero, Elvis, Keith Urban and Eric Church, along with bona fide rockers like Bruce Springsteen, and John Mayer, Alex has found a way to combine these sounds into his own atomic musical style.",
+      "image": " /img/AlexHall.jpg",
+      "facebook": " https://www.facebook.com/musicbyalexhall",
+      "instagram": " https://www.instagram.com/musicbyalexhall/",
+      "spotify": "https://open.spotify.com/artist/0uQBEPm8cAptCNmTWhio8o?si=yv-234shRvW8Iw0zfhSFrg",
+      "website": "https://www.musicbyalexhall.com",
+      "genreId": 9
+    }
+  ],
+  "venues": [
+    {
+      "id": 1,
+      "name": "The 5 Spot",
+      "address": "1006 Forrest Ave, Nashville, TN 37206",
+      "website": "https://www.the5spot.club/"
+    },
+    {
+      "id": 2,
+      "name": "The Basement",
+      "address": "1604 8th Ave S, Nashville, TN 37203",
+      "website": "https://www.thebasementnashville.com/"
+    },
+    {
+      "id": 3,
+      "name": "The Basement East",
+      "address": "917 Woodland St, Nashville, TN 37206",
+      "website": "https://www.thebasementnashville.com/"
+    },
+    {
+      "id": 4,
+      "name": "The Bluebird Cafe",
+      "address": "4104 Hillsboro Pike, Nashville, TN 37215",
+      "website": "https://bluebirdcafe.com/"
+    },
+    {
+      "id": 5,
+      "name": "3rd & Lindsley",
+      "address": "818 3rd Ave S, Nashville, TN 37210",
+      "website": "https://3rdandlindsley.com/"
+    },
+    {
+      "id": 6,
+      "name": "The End",
+      "address": "2219 Elliston Pl, Nashville, TN 37203",
+      "website": "https://endnashville.com/"
+    },
+    {
+      "id": 7,
+      "name": "The Station Inn",
+      "address": "402 12th Ave S, Nashville, TN 37203",
+      "website": "https://www.stationinn.com/"
+    },
+    {
+      "id": 8,
+      "name": "Dee's Country Cocktail Lounge",
+      "address": "102 E Palestine Ave, Madison, TN 37115",
+      "website": "https://www.deeslounge.com/"
+    },
+    {
+      "id": 9,
+      "name": "Rudy's Jazz Room",
+      "address": "809 Gleaves St, Nashville, TN 37203",
+      "website": "https://www.rudysjazzroom.com/"
+    },
+    {
+      "id": 10,
+      "name": "The Listening Room Cafe",
+      "address": "618 4th Ave S, Nashville, TN 37210",
+      "website": "https://www.listeningroomcafe.com/"
+    },
+    {
+      "id": 11,
+      "name": "The Blue Room",
+      "address": "623 7th Ave S, Nashville, TN 37203",
+      "website": "https://theblueroombar.com/"
+    },
+    {
+      "id": 12,
+      "name": "The High Watt",
+      "address": "1 Cannery Row, Nashville, TN 37203",
+      "website": "https://www.mercylounge.com/"
+    },
+    {
+      "id": 13,
+      "name": "Jane's Hideaway",
+      "address": "209 3rd Ave N, Nashville, TN 37201",
+      "website": "https://www.janeshideaway.com/"
+    },
+    {
+      "id": 14,
+      "name": "Skull's Rainbow Room",
+      "address": "222 Printer's Alley, Nashville, TN 37201",
+      "website": "https://skullsrainbowroom.com/"
+    },
+    {
+      "id": 15,
+      "name": "The Bowery Vault",
+      "address": "2905 Gallatin Pike, Suite C, Nashville, TN 37216",
+      "website": "https://www.theboweryvault.com/"
+    },
+    {
+      "id": 16,
+      "name": "The Underdog",
+      "address": "3208 Gallatin Pike, Nashville, TN 37216",
+      "website": "https://www.theunderdognashville.com/"
+    },
+    {
+      "id": 17,
+      "name": "Star Rover Sound",
+      "address": "1400 Adams St, Nashville, TN 37208",
+      "website": "https://www.starroversound.com/"
+    }
+  ],
+  "gigs": [
+    {
+      "artistId": 2,
+      "venueId": 17,
+      "dateTime": "2025-06-05T20:00",
+      "cost": 0,
+      "ages": "All Ages",
+      "id": 1
+    },
+    {
+      "artistId": 3,
+      "venueId": 15,
+      "dateTime": "2025-06-05T20:00",
+      "cost": 0,
+      "ages": "All Ages",
+      "id": 2
+    },
+    {
+      "artistId": 1,
+      "venueId": 1,
+      "dateTime": "2025-06-21T20:00",
+      "cost": "10",
+      "ages": "All Ages",
+      "id": 4
+    },
+    {
+      "artistId": 4,
+      "venueId": 2,
+      "dateTime": "2025-08-30T21:00",
+      "cost": "8",
+      "ages": "21+",
+      "id": 5
+    },
+    {
+      "artistId": 1,
+      "venueId": 5,
+      "dateTime": "2025-05-20T19:00",
+      "cost": "0",
+      "ages": "All Ages",
+      "id": 6
+    },
+    {
+      "artistId": 1,
+      "venueId": 6,
+      "dateTime": "2025-05-29T21:00",
+      "cost": "15",
+      "ages": "21+",
+      "id": 7
+    },
+    {
+      "artistId": 1,
+      "venueId": 6,
+      "dateTime": "2025-05-30T18:28",
+      "cost": "0",
+      "ages": "18+",
+      "id": 8
+    },
+    {
+      "artistId": 1,
+      "venueId": 3,
+      "dateTime": "2025-05-31T18:54",
+      "cost": "0",
+      "ages": "21+",
+      "id": 9
+    },
+    {
+      "artistId": 6,
+      "venueId": 5,
+      "dateTime": "2025-06-20T19:00",
+      "cost": "10",
+      "ages": "All Ages",
+      "id": 10
+    },
+    {
+      "artistId": 5,
+      "venueId": 16,
+      "dateTime": "2025-07-14T18:30",
+      "cost": "5",
+      "ages": "18+",
+      "id": 11
+    },
+    {
+      "artistId": 8,
+      "venueId": 8,
+      "dateTime": "2025-09-10T21:30",
+      "cost": "8",
+      "ages": "21+",
+      "id": 12
+    },
+    {
+      "id": 13,
+      "artistId": 2,
+      "venueId": 10,
+      "dateTime": "2025-08-15T20:00",
+      "cost": 10,
+      "ages": "21+"
+    },
+    {
+      "id": 14,
+      "artistId": 3,
+      "venueId": 12,
+      "dateTime": "2025-09-12T21:00",
+      "cost": 15,
+      "ages": "18+"
+    },
+    {
+      "id": 15,
+      "artistId": 4,
+      "venueId": 4,
+      "dateTime": "2025-10-03T19:30",
+      "cost": 20,
+      "ages": "All Ages"
+    },
+    {
+      "id": 16,
+      "artistId": 5,
+      "venueId": 13,
+      "dateTime": "2025-11-07T21:00",
+      "cost": 10,
+      "ages": "21+"
+    },
+    {
+      "id": 17,
+      "artistId": 6,
+      "venueId": 11,
+      "dateTime": "2025-12-12T20:00",
+      "cost": 5,
+      "ages": "All Ages"
+    },
+    {
+      "id": 18,
+      "artistId": 7,
+      "venueId": 17,
+      "dateTime": "2026-01-24T21:00",
+      "cost": 0,
+      "ages": "All Ages"
+    },
+    {
+      "id": 19,
+      "artistId": 8,
+      "venueId": 7,
+      "dateTime": "2026-02-13T20:30",
+      "cost": 20,
+      "ages": "21+"
+    },
+    {
+      "id": 20,
+      "artistId": 9,
+      "venueId": 14,
+      "dateTime": "2026-03-06T22:00",
+      "cost": 5,
+      "ages": "21+"
+    },
+    {
+      "id": 21,
+      "artistId": 10,
+      "venueId": 9,
+      "dateTime": "2026-04-17T20:00",
+      "cost": 15,
+      "ages": "All Ages"
+    },
+    {
+      "id": 22,
+      "artistId": 2,
+      "venueId": 1,
+      "dateTime": "2026-05-01T19:00",
+      "cost": 10,
+      "ages": "18+"
+    },
+    {
+      "id": 23,
+      "artistId": 3,
+      "venueId": 6,
+      "dateTime": "2026-05-16T20:30",
+      "cost": 0,
+      "ages": "21+"
+    },
+    {
+      "id": 24,
+      "artistId": 4,
+      "venueId": 8,
+      "dateTime": "2026-06-05T21:00",
+      "cost": 5,
+      "ages": "18+"
+    },
+    {
+      "id": 25,
+      "artistId": 5,
+      "venueId": 2,
+      "dateTime": "2025-10-25T20:00",
+      "cost": 0,
+      "ages": "All Ages"
+    },
+    {
+      "id": 26,
+      "artistId": 6,
+      "venueId": 15,
+      "dateTime": "2025-11-21T21:00",
+      "cost": 15,
+      "ages": "21+"
+    },
+    {
+      "id": 27,
+      "artistId": 7,
+      "venueId": 16,
+      "dateTime": "2026-03-21T20:00",
+      "cost": 10,
+      "ages": "18+"
+    },
+    {
+      "id": 28,
+      "artistId": 8,
+      "venueId": 3,
+      "dateTime": "2026-01-09T19:30",
+      "cost": 5,
+      "ages": "All Ages"
+    },
+    {
+      "id": 29,
+      "artistId": 9,
+      "venueId": 5,
+      "dateTime": "2026-02-27T21:00",
+      "cost": 20,
+      "ages": "21+"
+    },
+    {
+      "id": 30,
+      "artistId": 10,
+      "venueId": 14,
+      "dateTime": "2026-06-12T20:00",
+      "cost": 10,
+      "ages": "21+"
+    },
+    {
+      "artistId": 1,
+      "venueId": 1,
+      "dateTime": "2025-10-17T20:00",
+      "cost": "10",
+      "ages": "21+",
+      "id": 31
+    }
+  ],
+  "genres": [
+    {
+      "id": 1,
+      "name": "Alternative"
+    },
+    {
+      "id": 2,
+      "name": "Blues"
+    },
+    {
+      "id": 3,
+      "name": "Country"
+    },
+    {
+      "id": 4,
+      "name": "Electronic"
+    },
+    {
+      "id": 5,
+      "name": "Funk"
+    },
+    {
+      "id": 6,
+      "name": "Hip Hop"
+    },
+    {
+      "id": 7,
+      "name": "Indie"
+    },
+    {
+      "id": 8,
+      "name": "Jazz"
+    },
+    {
+      "id": 9,
+      "name": "Pop"
+    },
+    {
+      "id": 10,
+      "name": "Rock"
+    },
+    {
+      "id": 11,
+      "name": "Singer-Songwriter"
+    }
+  ]
+}
