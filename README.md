@@ -1,12 +1,29 @@
-# React + Vite
+# Nashville Gig Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solo project that serves as the capstone to sum up the first 3 months at Nashville Software School. Built using Javascript, React, HTML and CSS to provide full CRUD functionality across a multi-page application.
 
-Currently, two official plugins are available:
+Purpose:
+Often local Nashville artists’ shows get lost in the sheer amount of events happening in town if they’re not one of the big names. Nashville Gig Hub will be a place for Nashville based artists to post gigs they have in town, focused more on the small to mid-sized and “indie” artists and venues.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Installation Instructions:
 
-## Expanding the ESLint configuration
+Prerequisites:  
+Node.js (v18+ recommended)  
+npm (comes with Node)  
+json-server
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow these instructions to get 'Nashville Gig Hub' up and running on your machine.
+
+1. Clone the repo via SSH:  
+   In your terminal run: `git clone git@github.com:lukefdavids/NashvilleGigHub.git`  
+   cd to the projects directory "Nashville-Gig-Hub"
+
+2. Install dependencies:
+   `npm install`
+
+3. Start the front-end server:
+   `npm start`
+
+4. Start the mock API JSON server:  
+   cd to src/api  
+   Run: `json-server -p 8088 -w database.json`
