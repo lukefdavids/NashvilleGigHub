@@ -7,26 +7,26 @@ Often local Nashville artists’ shows get lost in the sheer amount of events ha
 
 # Installation Instructions:
 
-Prerequisites:
-Node.js (v18+ recommended)
-npm (comes with Node)
-json-server installed globally or as a dev dependency
+Prerequisites:  
+Node.js (v18+ recommended)  
+npm (comes with Node)  
+json-server
 
 
 Follow these instructions to get 'Nashville Gig Hub' up and running on your machine.
 
-1. Clone the repo via SSH : 
-git clone git@github.com:lukefdavids/NashvilleGigHub.git
+1. Clone the repo via SSH:   
+In your terminal run: `git clone git@github.com:lukefdavids/NashvilleGigHub.git`  
 cd to the projects directory "Nashville-Gig-Hub"
 
 2. Install dependencies:
-npm install
+`npm install`
 
 3. Start the front-end server:
-npm start
+`npm start`
 
-4. Start the mock API JSON server:
-cd to src/api
-Run: json-server -p 8088 -w database.json
+4. Start the mock API JSON server:  
+cd to src/api  
+Run: `json-server -p 8088 -w database.json`
 
 
