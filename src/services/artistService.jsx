@@ -1,4 +1,4 @@
-import { API_BASE_URL } from "./apiConfig.js";
+import { API_BASE_URL } from "./APIConfig.js";
 
 export const getAllArtists = () => {
   return fetch(`${API_BASE_URL}/artists`).then((res) => res.json());
