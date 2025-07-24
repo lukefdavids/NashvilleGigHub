@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
+import "./index.css";
 import { Login } from "./components/auth/Login";
 import { Authorized } from "./views/Authorized";
 import { ApplicationViews } from "./views/ApplicationViews";

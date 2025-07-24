@@ -1,11 +1,13 @@
+import { API_BASE_URL } from "./APIConfig.js";
+
 export const getUserByName = (name) => {
-  return fetch(`http://localhost:8088/artists?name=${name}`).then((res) =>
+  return fetch(`${API_BASE_URL}/artists?name=${name}`).then((res) =>
     res.json()
   );
 };
 
 export const createUser = (user) => {
-  return fetch("http://localhost:8088/artists", {
+  return fetch(`${API_BASE_URL}/artists`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -15,7 +17,7 @@ export const createUser = (user) => {
 };
 
 export const getUserById = (currentUserId) => {
-  return fetch(`http://localhost:8088/artists/${currentUserId}`).then((res) =>
+  return fetch(`${API_BASE_URL}/artists/${currentUserId}`).then((res) =>
     res.json()
   );
 };

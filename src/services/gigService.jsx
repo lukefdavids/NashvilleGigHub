@@ -1,23 +1,23 @@
+import { API_BASE_URL } from "./APIConfig.js";
+
 export const getAllGigs = () => {
-  return fetch("http://localhost:8088/gigs?_expand=artist").then((res) =>
-    res.json()
-  );
+  return fetch(`${API_BASE_URL}/gigs?_expand=artist`).then((res) => res.json());
 };
 
 export const getGigByArtistId = (artistId) => {
-  return fetch(
-    `http://localhost:8088/gigs?artistId=${artistId}&_expand=artist`
-  ).then((res) => res.json());
+  return fetch(`${API_BASE_URL}/gigs?artistId=${artistId}&_expand=artist`).then(
+    (res) => res.json()
+  );
 };
 
 export const getGigsByUserId = (userId) => {
-  return fetch(
-    `http://localhost:8088/gigs?artistId=${userId}&_expand=artist`
-  ).then((res) => res.json());
+  return fetch(`${API_BASE_URL}/gigs?artistId=${userId}&_expand=artist`).then(
+    (res) => res.json()
+  );
 };
 
 export const postNewGig = (gigObj) => {
-  return fetch("http://localhost:8088/gigs", {
+  return fetch(`${API_BASE_URL}/gigs`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -27,13 +27,13 @@ export const postNewGig = (gigObj) => {
 };
 
 export const deleteGig = (gigId) => {
-  return fetch(`http://localhost:8088/gigs/${gigId}`, {
+  return fetch(`${API_BASE_URL}/gigs/${gigId}`, {
     method: "DELETE",
   }).then((res) => res.json());
 };
 
 export const updateGig = (gigObj) => {
-  return fetch(`http://localhost:8088/gigs/${gigObj.id}`, {
+  return fetch(`${API_BASE_URL}/gigs/${gigObj.id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
@@ -43,5 +43,5 @@ export const updateGig = (gigObj) => {
 };
 
 export const getGigById = (gigId) => {
-  return fetch(`http://localhost:8088/gigs/${gigId}`).then((res) => res.json());
+  return fetch(`${API_BASE_URL}/gigs/${gigId}`).then((res) => res.json());
 };
