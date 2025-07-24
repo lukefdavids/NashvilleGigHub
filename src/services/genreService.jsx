@@ -1,3 +1,5 @@
+import { API_BASE_URL } from "./APIConfig.js";
+
 export const getAllGenres = () => {
-  return fetch("http://localhost:8088/genres").then((res) => res.json());
+  return fetch(`${API_BASE_URL}/genres`).then((res) => res.json());
 };
