@@ -1,17 +1,6 @@
 {
   "artists": [
     {
-      "id": 1,
-      "name": "Luke Davids",
-      "bio": "Luke Davids is a London-born singer-songwriter with piano-based songs and inventive arrangements that evoke the refined hooks of The Beatles, Billy Joel, Elvis Costello and Ben Folds Five. His music is described as “sharp, accessibly sophisticated, and refreshingly sincere.”",
-      "image": "/img/LukeDavids.jpeg",
-      "facebook": "https://www.facebook.com/lukedavidsmusic",
-      "instagram": "https://www.instagram.com/lukefdavids/?hl=en",
-      "spotify": "https://open.spotify.com/artist/68BB5oeFQgN3OfC26JdTpz?si=mAc3e0woSEW3ILGSp_1B0Q",
-      "website": "https://www.lukedavids.com",
-      "genreId": 11
-    },
-    {
       "id": 2,
       "name": "Corey Congilio",
       "bio": "Corey Congilio is a seasoned guitarist, educator, and producer based in Nashville, Tennessee. Born and raised in Phillipsburg, New Jersey, he was introduced to music by his family and began playing guitar at the age of 13. After studying audio engineering at the Art Institute of Pittsburgh, he became an in-demand session player and producer.\n\nIn 2014, he moved to Nashville, where he has performed with artists such as Joss Stone, David Lee Murphy, Lucie Silvas, Radney Foster, Cassadee Pope, Derek St. Holmes, Danielle Bradberry, and Laura Bell Bundy. Corey has authored over 30 instructional guitar courses and is known for his work with TrueFire, Brett Papa, and Your Guitar Sage.\n\nHe also hosts weekly lessons and gear demos on his YouTube channel. In addition to his teaching, Corey writes and performs his own music, blending traditional blues with contemporary rock and country influences.",
@@ -233,52 +222,12 @@
       "id": 2
     },
     {
-      "artistId": 1,
-      "venueId": 1,
-      "dateTime": "2025-06-21T20:00",
-      "cost": "10",
-      "ages": "All Ages",
-      "id": 4
-    },
-    {
       "artistId": 4,
       "venueId": 2,
       "dateTime": "2025-08-30T21:00",
       "cost": "8",
       "ages": "21+",
       "id": 5
-    },
-    {
-      "artistId": 1,
-      "venueId": 5,
-      "dateTime": "2025-05-20T19:00",
-      "cost": "0",
-      "ages": "All Ages",
-      "id": 6
-    },
-    {
-      "artistId": 1,
-      "venueId": 6,
-      "dateTime": "2025-05-29T21:00",
-      "cost": "15",
-      "ages": "21+",
-      "id": 7
-    },
-    {
-      "artistId": 1,
-      "venueId": 6,
-      "dateTime": "2025-05-30T18:28",
-      "cost": "0",
-      "ages": "18+",
-      "id": 8
-    },
-    {
-      "artistId": 1,
-      "venueId": 3,
-      "dateTime": "2025-05-31T18:54",
-      "cost": "0",
-      "ages": "21+",
-      "id": 9
     },
     {
       "artistId": 6,
@@ -447,14 +396,6 @@
       "dateTime": "2026-06-12T20:00",
       "cost": 10,
       "ages": "21+"
-    },
-    {
-      "artistId": 1,
-      "venueId": 1,
-      "dateTime": "2025-10-17T20:00",
-      "cost": "10",
-      "ages": "21+",
-      "id": 31
     }
   ],
   "genres": [
