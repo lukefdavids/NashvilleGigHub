@@ -30,5 +30,5 @@ Follow these instructions to get 'Nashville Gig Hub' up and running on your mach
 
 # View Demo:
 
-If you'd prefer you can watch a walkthrough demo-ing the functionality of the sites features here: 
+If you'd prefer you can watch a walkthrough demo-ing the functionality of the sites features here:
 https://www.loom.com/share/6da10403f8ac4ac6a72f54c48f9efe3d?sid=89e5a0d7-a9e3-4a5d-ad61-a274dfb82cb8
